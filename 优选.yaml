@@ -1,235 +1,455 @@
-port: 7890
+﻿port: 7890
 socks-port: 7891
 allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 香港(绿头外网集团)(Public) 4, server: azhk.pluscloud.top, port: 443, type: trojan, password: 78990d57-2af6-4092-bf6b-f11575db222f, sni: azhk.pluscloud.top, skip-cert-verify: true, udp: true}
-  - {name: 韩国|01|AWSKR|0.1x|移动起飞, server: aws.kr.tgproxy.wtf, port: 21888, type: vmess, uuid: aeaaff19-bb0b-434d-b206-0f2a3f4d90e9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /theuploadapi, ws-headers: {Host: aws.kr.tgproxy.wtf}, udp: true}
-  - {name: 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 82, server: 198.57.27.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 电诈专用, server: 6ujbkynlzx.alilibobocloud.xyz, port: 2701, type: ssr, cipher: aes-256-cfb, password: cQN8rVZyWAJ, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 333450:9y0gI9, obfs-param: 4490c333450.microsoft.com, udp: true}
-  - {name: 【小库订阅】US_2011, server: 172.99.190.39, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 【小库订阅】US_1605, server: 172.99.190.109, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 【小库订阅】US_2316, server: 172.99.190.205, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: youtube:8度科技_美国 21, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 【小库订阅】US_2239, server: 172.99.190.109, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 44, server: 38.107.226.241, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 【小库订阅】US_2254, server: 172.99.190.109, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 【小库订阅】US_1690, server: 38.68.134.191, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 【小库订阅】US_2284, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: youtube:8度科技_英国 4, server: 172.99.190.139, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 【小库订阅】US_2222, server: 172.99.190.109, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: youtube:8度科技_美国 51, server: 38.68.134.191, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: youtube:8度科技_美国 33, server: 38.68.134.37, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 21, server: 134.195.196.71, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 21, server: 38.68.134.37, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: youtube:8度科技_美国 29, server: 167.88.63.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大(绿头外网集团)(Public) 21, server: 134.195.196.51, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 【小库订阅】US_2025, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 69, server: 198.57.27.172, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: youtube:8度科技_美国 112, server: 167.88.63.28, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 【小库订阅】US_1825, server: 38.121.43.71, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 【小库订阅】US_1657, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Canada 1 (t.me/SurfShark_ALA), server: 134.195.196.81, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大(绿头外网集团)(Public) 4, server: 198.57.27.191, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: youtube:8度科技_加拿大 23, server: 198.57.27.152, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: youtube:8度科技_美国 68, server: 38.107.226.48, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 【小库订阅】US_2134, server: 38.107.226.48, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: youtube:8度科技_美国 116, server: 38.68.134.37, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 【小库订阅】US_1793, server: 38.107.226.48, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 8, server: 134.195.196.71, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 73, server: 198.57.27.172, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: youtube:8度科技_加拿大 19, server: 198.57.27.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: youtube:8度科技_美国 24, server: 38.68.134.37, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: "*🇫🇷FR -1042 TG@小库订阅", server: 117.28.243.220, port: 8186, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
-  - {name: youtube:8度科技_加拿大 44, server: 134.195.196.193, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: youtube:8度科技_加拿大 25, server: 198.57.27.184, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 77, server: 198.57.27.172, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 49, server: 38.68.134.23, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 26, server: 38.68.134.23, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 30, server: 38.68.134.23, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: 【小库订阅】US_1874, server: 172.99.190.39, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 9, server: 134.195.196.71, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: youtube:8度科技_加拿大 45, server: 198.57.27.184, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 12, server: 134.195.196.71, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: youtube:8度科技_加拿大 42, server: 198.57.27.152, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 加拿大(绿头外网集团)(Public) 11, server: 198.57.27.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: "*🇺🇸US -1406 TG@小库订阅", server: 23.226.131.146, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: ckX2YfENbjCtVzVJphFP, udp: true}
-  - {name: 【小库订阅】US_2506, server: 167.88.61.60, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 香港HKT-优化, server: cu.mj-cn.cyou, port: 16620, type: vmess, uuid: 60fb4b6c-7c87-4693-b5c4-b393037ecb1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.mj-cn.cyou}, udp: true}
+  - {name: 香港2-Baron小浪浪分享, server: shonlinesandcu03.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 26043:ff112233, obfs-param: "", udp: true}
+  - {name: 日本(绿头外网集团)(Public) 11, server: 45.78.55.183, port: 25893, type: vmess, uuid: eb31a782-ef1a-47a3-8c8b-3fb7b7705e2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 8, server: zjcm.relay.qchwnd.moe, port: 10205, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: zjcm.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: V4-中转3301|广东H-台湾|解锁|x1.0, server: gd-h-suying.ddns-oink.xyz, port: 13301, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 131102:ghfnvztn697, obfs-param: 2b540131102.microsoft.com, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 9, server: zjcm.relay.qchwnd.moe, port: 10200, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: zjcm.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 台湾-中继-02(CNRelay Taiwan02), server: cmrelay01.yiyorelay.xyz, port: 5701, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: "[VIP]韩国4|华中入口|1x", server: hz.pbaplink.xyz, port: 47769, type: trojan, password: ad983854-167d-478f-88eb-5d494d3b2c24, sni: hz.pbaplink.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本-中继-07(CNRelay Japan07), server: cmrelay01.yiyorelay.xyz, port: 3706, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: V4-中转3449|广东W-香港HGC|解锁|x2.5, server: gd-w-suying.ddns-oink.xyz, port: 13449, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 131102:ghfnvztn697, obfs-param: 2b540131102.microsoft.com, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 10, server: zjcm.relay.qchwnd.moe, port: 10204, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: zjcm.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 香港3-Baron小浪浪分享, server: shonlinesandcu03.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 26043:ff112233, obfs-param: "", udp: true}
+  - {name: 台湾-中继-06(CNRelay Taiwan06), server: cmrelay01.yiyorelay.xyz, port: 5705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 韩国-Baron小浪浪分享, server: shallaz.proconcn.xyz, port: 565, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 26043:ff112233, obfs-param: "", udp: true}
+  - {name: 新加坡(绿头外网集团)(Public) 8, server: gdcm2.relay.qchwnd.moe, port: 10222, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: gdcm2.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 香港 Hongkong HKT●, server: gz1.52168.xyz, port: 1112, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 9, server: zjcm.relay.qchwnd.moe, port: 10206, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: zjcm.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: V3-中转3316|广东U-台湾|解锁|x1.5, server: gd-u-suying.ddns-oink.xyz, port: 13316, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 131102:ghfnvztn697, obfs-param: 2b540131102.microsoft.com, udp: true}
+  - {name: 香港1-Baron小浪浪分享, server: shonlinecu.proconcn.xyz, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 26043:ff112233, obfs-param: "", udp: true}
+  - {name: 馬來西亞(绿头外网集团)(Public), server: cn.bilibili.al, port: 52206, type: vmess, uuid: 050D9B21-53B6-14E8-1EAC-27F287A91E81, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: "%7B%22Host%22:%22cn.bilibili.al%22%7D"}, udp: true}
+  - {name: 香港4-Baron小浪浪分享, server: shcris02stand.proconcn.xyz, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 26043:ff112233, obfs-param: "", udp: true}
+  - {name: 韩国-优化, server: cu.mj-cn.cyou, port: 16619, type: vmess, uuid: 60fb4b6c-7c87-4693-b5c4-b393037ecb1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.mj-cn.cyou}, udp: true}
+  - {name: 台湾-中继-03(CNRelay Taiwan03), server: cmrelay01.yiyorelay.xyz, port: 5702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 11 2, server: 45.78.55.183, port: 25893, type: vmess, uuid: eb31a782-ef1a-47a3-8c8b-3fb7b7705e2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 台湾-中继-05(CNRelay Taiwan05), server: cmrelay01.yiyorelay.xyz, port: 5704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 8, server: zjcm.relay.qchwnd.moe, port: 10202, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: zjcm.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 新加坡-优化, server: cu.mj-cn.cyou, port: 16618, type: vmess, uuid: 60fb4b6c-7c87-4693-b5c4-b393037ecb1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cu.mj-cn.cyou}, udp: true}
+  - {name: 【测试】深圳 -> 日本 A, server: 183.240.132.30, port: 10001, type: vmess, uuid: d76a7e70-530d-4e53-8c50-496f01d4c0a8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.240.132.30}, udp: true}
+  - {name: 愛沙尼亞(绿头外网集团)(Public) 2, server: os2-5.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-5.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: V4-中转3299|广东H-台湾|解锁|x1.0, server: gd-h-suying.ddns-oink.xyz, port: 13299, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 131102:ghfnvztn697, obfs-param: 2b540131102.microsoft.com, udp: true}
+  - {name: V4-中转3303|广东H-台湾|解锁|x1.0, server: gd-h-suying.ddns-oink.xyz, port: 13303, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 131102:ghfnvztn697, obfs-param: 2b540131102.microsoft.com, udp: true}
+  - {name: 新加坡-优化2, server: cm.mj-cn.cyou, port: 16618, type: vmess, uuid: 60fb4b6c-7c87-4693-b5c4-b393037ecb1f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: cm.mj-cn.cyou}, udp: true}
+  - {name: 俄罗斯(绿头外网集团)(Public), server: zjcm.relay.qchwnd.moe, port: 10208, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: zjcm.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: V4-中转3305|广东H-台湾|解锁|x1.0, server: gd-h-suying.ddns-oink.xyz, port: 13305, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 131102:ghfnvztn697, obfs-param: 2b540131102.microsoft.com, udp: true}
+  - {name: V4-中转3302|广东H-台湾|解锁|x1.0, server: gd-h-suying.ddns-oink.xyz, port: 13302, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 131102:ghfnvztn697, obfs-param: 2b540131102.microsoft.com, udp: true}
+  - {name: V3-中转3185|广东D-香港|解锁|x1.5, server: gd-d-suying.ddns-oink.xyz, port: 13185, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 131102:ghfnvztn697, obfs-param: 2b540131102.microsoft.com, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 12, server: japanfastnetwork.club, port: 443, type: vmess, uuid: fb8ed8a9-ad61-4a12-90c6-55670a4a3332, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /neuromancer, ws-headers: {Host: japanfastnetwork.club}, udp: true}
+  - {name: 日本-Baron小浪浪分享, server: shallaz.proconcn.xyz, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 26043:ff112233, obfs-param: "", udp: true}
+  - {name: V3-中转3383|广东U-台湾|解锁|x1.5, server: gd-u-suying.ddns-oink.xyz, port: 13383, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 131102:ghfnvztn697, obfs-param: 2b540131102.microsoft.com, udp: true}
+  - {name: V3-中转3317|广东U-台湾|解锁|x1.5, server: gd-u-suying.ddns-oink.xyz, port: 13317, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 131102:ghfnvztn697, obfs-param: 2b540131102.microsoft.com, udp: true}
+  - {name: 馬來西亞(绿头外网集团)(Public) 2, server: cn.bilibili.al, port: 52206, type: vmess, uuid: 050D9B21-53B6-14E8-1EAC-27F287A91E81, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: cn.bilibili.al}, udp: true}
+  - {name: 倾城极速@qcjs1, server: 108.136.163.50, port: 58973, type: ss, cipher: chacha20-ietf-poly1305, password: b7aa90f0-8be1-4420-a860-147e980a198e, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 11, server: chun2.515223.xyz, port: 43992, type: vmess, uuid: 99e191b5-6515-47b8-f0c0-f6053afeb75a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡-Baron小浪浪分享, server: shallaz.proconcn.xyz, port: 567, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 26043:ff112233, obfs-param: "", udp: true}
+  - {name: 美国(绿头外网集团)(Public) 11 2, server: chun2.515223.xyz, port: 43992, type: vmess, uuid: 99e191b5-6515-47b8-f0c0-f6053afeb75a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡-中继-09(CNRelay Singapore09), server: cmrelay01.yiyorelay.xyz, port: 6708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: V4-中转3560|广东G-新加坡|x2.0, server: gd-g-suying.ddns-oink.xyz, port: 13560, type: ssr, cipher: rc4-md5, password: Cskw6d, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 131102:ghfnvztn697, obfs-param: 2b540131102.microsoft.com, udp: true}
+  - {name: 日本-中继-10(CNRelay Japan10), server: cmrelay01.yiyorelay.xyz, port: 3709, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 14, server: 23.105.192.212, port: 25893, type: ss, cipher: aes-256-gcm, password: FDy2cvJmBXeEbfdY, udp: true}
+  - {name: 新加坡-中继-06(CNRelay Singapore06), server: cmrelay01.yiyorelay.xyz, port: 6705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 韩国(绿头外网集团)(Public) 3, server: 146.56.108.108, port: 37749, type: vmess, uuid: e0e06b1c-ee1e-4dbf-a17a-89f06ff2753c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡-中继-08(CNRelay Singapore08), server: cmrelay01.yiyorelay.xyz, port: 6707, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 新加坡-中继-05(CNRelay Singapore05), server: cmrelay01.yiyorelay.xyz, port: 6704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 4, server: arm.50k.one, port: 39966, type: vmess, uuid: 608408f6-fd79-49a3-96ef-003266a773a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本-中继-06(CNRelay Japan06), server: cmrelay01.yiyorelay.xyz, port: 3705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 10, server: jason.lbtzyw.com, port: 443, type: vmess, uuid: f3a8372f-73aa-4a92-9f23-cfa0a9830d7e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: "/zovpvws?ed=2048", ws-headers: {Host: jason.lbtzyw.com}, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 12, server: 104.168.13.8, port: 41342, type: vmess, uuid: 3aa90670-6d21-4287-eec5-0cd0b21d579a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 104.168.13.8}, udp: true}
+  - {name: 日本-中继-09(CNRelay Japan09), server: cmrelay01.yiyorelay.xyz, port: 3708, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 15, server: 64.64.245.185, port: 25893, type: vmess, uuid: eb31a782-ef1a-47a3-8c8b-3fb7b7705e2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 韩国-中继-01(CNRelay Korea01), server: cmrelay01.yiyorelay.xyz, port: 4000, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 韩国(绿头外网集团)(Public) 3 2, server: 146.56.108.108, port: 37749, type: vmess, uuid: e0e06b1c-ee1e-4dbf-a17a-89f06ff2753c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 美国-中继-06(CNRelay USA06), server: cmrelay01.yiyorelay.xyz, port: 7705, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: CN_中国_油管 TG 8度科技 35, server: 183.240.181.20, port: 2101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 美国-中继-03(CNRelay USA03), server: cmrelay01.yiyorelay.xyz, port: 7702, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 韩国(绿头外网集团)(Public) 2, server: hmykr1.tk, port: 443, type: trojan, password: 998ec528-845f-4082-9e1b-26a642b26978, sni: hmykr1.tk, skip-cert-verify: true, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 6, server: oioooo.tk, port: 443, type: trojan, password: 54ea0e82-64e4-486c-848c-8b95be9f0010, sni: oioooo.tk, skip-cert-verify: true, udp: true}
+  - {name: 美国-中继-05(CNRelay USA05), server: cmrelay01.yiyorelay.xyz, port: 7704, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 荷兰(绿头外网集团)(Public), server: 104.255.65.231, port: 25893, type: vmess, uuid: eb31a782-ef1a-47a3-8c8b-3fb7b7705e2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡-中继-04(CNRelay Singapore04), server: cmrelay01.yiyorelay.xyz, port: 6703, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 韩国-中继-04(CNRelay Korea04), server: cmrelay01.yiyorelay.xyz, port: 4003, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 韩国-中继-03(CNRelay Korea03), server: cmrelay01.yiyorelay.xyz, port: 4002, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 韩国-中继-02(CNRelay Korea02), server: cmrelay01.yiyorelay.xyz, port: 4001, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
+  - {name: 倾城极速@qcjs1 4, server: 13.124.30.68, port: 52783, type: ss, cipher: chacha20-ietf-poly1305, password: b7aa90f0-8be1-4420-a860-147e980a198e, udp: true}
+  - {name: 英国(绿头外网集团)(Public), server: azhk.relay.qchwnd.moe, port: 10217, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: azhk.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 6, server: 16.163.148.47, port: 38957, type: ss, cipher: aes-256-gcm, password: b7aa90f0-8be1-4420-a860-147e980a198e, udp: true}
+  - {name: US_美国_油管 TG 8度科技 3, server: 172.67.68.58, port: 443, type: vmess, uuid: f2f578e4-692d-40b5-af99-9f1dd712eb32, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /shuier, ws-headers: {Host: xc1.v2rie.pp.ua}, udp: true}
+  - {name: 【测试】深圳 -> 新加坡 A, server: 183.240.132.30, port: 10003, type: vmess, uuid: d76a7e70-530d-4e53-8c50-496f01d4c0a8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 183.240.132.30}, udp: true}
+  - {name: Makati-Eastern-free, server: 183.240.181.20, port: 1101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: t.me/vpnhat, udp: true}
+  - {name: 俄羅斯(绿头外网集团)(Public), server: t3.ssrsub.com, port: 8443, type: trojan, password: 739e53db-d41c-4bad-a61d-6cd5a173f85b, sni: t3.ssrsub.com, skip-cert-verify: true, udp: true}
+  - {name: 倾城极速@qcjs1 3, server: 18.166.193.83, port: 38297, type: ss, cipher: chacha20-ietf-poly1305, password: b7aa90f0-8be1-4420-a860-147e980a198e, udp: true}
+  - {name: 菲律宾∞中转, server: gz1.52168.xyz, port: 1101, type: ssr, cipher: aes-256-cfb, password: epChJS35fV, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 149:y711wfz6uln, obfs-param: 30a2a149.baidu.com, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 3, server: 172.99.190.188, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: GB_英国_油管 TG 8度科技, server: 172.99.190.188, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 香港(绿头外网集团)(Public) 7, server: 16.163.192.29, port: 37528, type: ss, cipher: aes-256-gcm, password: b7aa90f0-8be1-4420-a860-147e980a198e, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 8, server: 172.99.190.188, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 新加坡(绿头外网集团)(Public) 6, server: cloudflare.a-yu.xyz, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /sakura/, ws-headers: {Host: zero2.a-yu.xyz}, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 15, server: 172.99.190.188, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 4 2, server: arm.50k.one, port: 39966, type: vmess, uuid: 608408f6-fd79-49a3-96ef-003266a773a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 2, server: 172.99.190.188, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 愛沙尼亞(绿头外网集团)(Public), server: os2-3.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-3.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 14, server: 172.99.190.205, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 12, server: 172.99.190.188, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 16, server: 172.99.190.188, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 3, server: 45.142.166.15, port: 56654, type: trojan, password: 52911320-db53-40ff-917a-e5de797c28e7, skip-cert-verify: true, udp: true}
+  - {name: 法國(绿头外网集团)(Public) 3, server: 149.202.82.172, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 10, server: 172.99.190.188, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 11, server: 172.99.190.188, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 加拿大(绿头外网集团)(Public) 2, server: zjcm.relay.qchwnd.moe, port: 10214, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: zjcm.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
+  - {name: 油管 TG 8度科技, server: test.0dc.cn, port: 443, type: vmess, uuid: ebe5703b-c18e-4664-c3a7-9fcf52453898, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: test.0dc.cn}, udp: true}
+  - {name: "*🇸🇬SG -323 TG@moon365free", server: 117.28.243.220, port: 8076, type: ss, cipher: rc4-md5, password: passinfo123, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 4, server: 172.99.190.188, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 16, server: 23.83.224.48, port: 25893, type: vmess, uuid: eb31a782-ef1a-47a3-8c8b-3fb7b7705e2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 9, server: 172.99.190.188, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 6, server: 172.99.190.205, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: GB_英国_油管 TG 8度科技 5, server: 172.99.190.205, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 日本(绿头外网集团)(Public) 2, server: 3.112.54.84, port: 443, type: trojan, password: 6593b778-e45e-4f94-b5ae-641d4b7b02ae, skip-cert-verify: true, udp: true}
+  - {name: 台湾-中继-01(CNRelay Taiwan01), server: cmrelay01.yiyorelay.xyz, port: 5700, type: ssr, cipher: chacha20-ietf, password: jFa4F1, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 54087:ASGF2j, obfs-param: bb23754087.microsoft.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港(绿头外网集团)(Public) 4
-      - 韩国|01|AWSKR|0.1x|移动起飞
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 82
-      - 电诈专用
-      - 【小库订阅】US_2011
-      - 【小库订阅】US_1605
-      - 【小库订阅】US_2316
-      - youtube:8度科技_美国 21
-      - 【小库订阅】US_2239
-      - 美国(绿头外网集团)(Public) 44
-      - 【小库订阅】US_2254
-      - 【小库订阅】US_1690
-      - 【小库订阅】US_2284
-      - youtube:8度科技_英国 4
-      - 【小库订阅】US_2222
-      - youtube:8度科技_美国 51
-      - youtube:8度科技_美国 33
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 21
-      - 美国(绿头外网集团)(Public) 21
-      - youtube:8度科技_美国 29
-      - 加拿大(绿头外网集团)(Public) 21
-      - 【小库订阅】US_2025
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 69
-      - youtube:8度科技_美国 112
-      - 【小库订阅】US_1825
-      - 【小库订阅】US_1657
-      - Canada 1 (t.me/SurfShark_ALA)
-      - 加拿大(绿头外网集团)(Public) 4
-      - youtube:8度科技_加拿大 23
-      - youtube:8度科技_美国 68
-      - 【小库订阅】US_2134
-      - youtube:8度科技_美国 116
-      - 【小库订阅】US_1793
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 8
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 73
-      - youtube:8度科技_加拿大 19
-      - youtube:8度科技_美国 24
-      - "*🇫🇷FR -1042 TG@小库订阅"
-      - youtube:8度科技_加拿大 44
-      - youtube:8度科技_加拿大 25
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 77
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 49
-      - 美国(绿头外网集团)(Public) 26
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 30
-      - 【小库订阅】US_1874
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 9
-      - youtube:8度科技_加拿大 45
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 12
-      - youtube:8度科技_加拿大 42
-      - 加拿大(绿头外网集团)(Public) 11
-      - "*🇺🇸US -1406 TG@小库订阅"
-      - 【小库订阅】US_2506
+      - 香港HKT-优化
+      - 香港2-Baron小浪浪分享
+      - 日本(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 8
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - 日本(绿头外网集团)(Public) 9
+      - 台湾-中继-02(CNRelay Taiwan02)
+      - "[VIP]韩国4|华中入口|1x"
+      - 日本-中继-07(CNRelay Japan07)
+      - V4-中转3449|广东W-香港HGC|解锁|x2.5
+      - 日本(绿头外网集团)(Public) 10
+      - 香港3-Baron小浪浪分享
+      - 台湾-中继-06(CNRelay Taiwan06)
+      - 韩国-Baron小浪浪分享
+      - 新加坡(绿头外网集团)(Public) 8
+      - 香港 Hongkong HKT●
+      - 美国(绿头外网集团)(Public) 9
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - 香港1-Baron小浪浪分享
+      - 馬來西亞(绿头外网集团)(Public)
+      - 香港4-Baron小浪浪分享
+      - 韩国-优化
+      - 台湾-中继-03(CNRelay Taiwan03)
+      - 日本(绿头外网集团)(Public) 11 2
+      - 台湾-中继-05(CNRelay Taiwan05)
+      - 日本(绿头外网集团)(Public) 8
+      - 新加坡-优化
+      - 【测试】深圳 -> 日本 A
+      - 愛沙尼亞(绿头外网集团)(Public) 2
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - 新加坡-优化2
+      - 俄罗斯(绿头外网集团)(Public)
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3302|广东H-台湾|解锁|x1.0
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - 日本(绿头外网集团)(Public) 12
+      - 日本-Baron小浪浪分享
+      - V3-中转3383|广东U-台湾|解锁|x1.5
+      - V3-中转3317|广东U-台湾|解锁|x1.5
+      - 馬來西亞(绿头外网集团)(Public) 2
+      - 倾城极速@qcjs1
+      - 美国(绿头外网集团)(Public) 11
+      - 新加坡-Baron小浪浪分享
+      - 美国(绿头外网集团)(Public) 11 2
+      - 新加坡-中继-09(CNRelay Singapore09)
+      - V4-中转3560|广东G-新加坡|x2.0
+      - 日本-中继-10(CNRelay Japan10)
+      - 美国(绿头外网集团)(Public) 14
+      - 新加坡-中继-06(CNRelay Singapore06)
+      - 韩国(绿头外网集团)(Public) 3
+      - 新加坡-中继-08(CNRelay Singapore08)
+      - 新加坡-中继-05(CNRelay Singapore05)
+      - 日本(绿头外网集团)(Public) 4
+      - 日本-中继-06(CNRelay Japan06)
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 12
+      - 日本-中继-09(CNRelay Japan09)
+      - 美国(绿头外网集团)(Public) 15
+      - 韩国-中继-01(CNRelay Korea01)
+      - 韩国(绿头外网集团)(Public) 3 2
+      - 美国-中继-06(CNRelay USA06)
+      - CN_中国_油管 TG 8度科技 35
+      - 美国-中继-03(CNRelay USA03)
+      - 韩国(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public) 6
+      - 美国-中继-05(CNRelay USA05)
+      - 荷兰(绿头外网集团)(Public)
+      - 新加坡-中继-04(CNRelay Singapore04)
+      - 韩国-中继-04(CNRelay Korea04)
+      - 韩国-中继-03(CNRelay Korea03)
+      - 韩国-中继-02(CNRelay Korea02)
+      - 倾城极速@qcjs1 4
+      - 英国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 6
+      - US_美国_油管 TG 8度科技 3
+      - 【测试】深圳 -> 新加坡 A
+      - Makati-Eastern-free
+      - 俄羅斯(绿头外网集团)(Public)
+      - 倾城极速@qcjs1 3
+      - 菲律宾∞中转
+      - GB_英国_油管 TG 8度科技 3
+      - GB_英国_油管 TG 8度科技
+      - 香港(绿头外网集团)(Public) 7
+      - GB_英国_油管 TG 8度科技 8
+      - 新加坡(绿头外网集团)(Public) 6
+      - GB_英国_油管 TG 8度科技 15
+      - 日本(绿头外网集团)(Public) 4 2
+      - GB_英国_油管 TG 8度科技 2
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 16
+      - 美国(绿头外网集团)(Public) 3
+      - 法國(绿头外网集团)(Public) 3
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - 加拿大(绿头外网集团)(Public) 2
+      - 油管 TG 8度科技
+      - "*🇸🇬SG -323 TG@moon365free"
+      - GB_英国_油管 TG 8度科技 4
+      - 美国(绿头外网集团)(Public) 16
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 5
+      - 日本(绿头外网集团)(Public) 2
+      - 台湾-中继-01(CNRelay Taiwan01)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 香港(绿头外网集团)(Public) 4
-      - 韩国|01|AWSKR|0.1x|移动起飞
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 82
-      - 电诈专用
-      - 【小库订阅】US_2011
-      - 【小库订阅】US_1605
-      - 【小库订阅】US_2316
-      - youtube:8度科技_美国 21
-      - 【小库订阅】US_2239
-      - 美国(绿头外网集团)(Public) 44
-      - 【小库订阅】US_2254
-      - 【小库订阅】US_1690
-      - 【小库订阅】US_2284
-      - youtube:8度科技_英国 4
-      - 【小库订阅】US_2222
-      - youtube:8度科技_美国 51
-      - youtube:8度科技_美国 33
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 21
-      - 美国(绿头外网集团)(Public) 21
-      - youtube:8度科技_美国 29
-      - 加拿大(绿头外网集团)(Public) 21
-      - 【小库订阅】US_2025
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 69
-      - youtube:8度科技_美国 112
-      - 【小库订阅】US_1825
-      - 【小库订阅】US_1657
-      - Canada 1 (t.me/SurfShark_ALA)
-      - 加拿大(绿头外网集团)(Public) 4
-      - youtube:8度科技_加拿大 23
-      - youtube:8度科技_美国 68
-      - 【小库订阅】US_2134
-      - youtube:8度科技_美国 116
-      - 【小库订阅】US_1793
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 8
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 73
-      - youtube:8度科技_加拿大 19
-      - youtube:8度科技_美国 24
-      - "*🇫🇷FR -1042 TG@小库订阅"
-      - youtube:8度科技_加拿大 44
-      - youtube:8度科技_加拿大 25
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 77
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 49
-      - 美国(绿头外网集团)(Public) 26
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 30
-      - 【小库订阅】US_1874
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 9
-      - youtube:8度科技_加拿大 45
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 12
-      - youtube:8度科技_加拿大 42
-      - 加拿大(绿头外网集团)(Public) 11
-      - "*🇺🇸US -1406 TG@小库订阅"
-      - 【小库订阅】US_2506
+      - 香港HKT-优化
+      - 香港2-Baron小浪浪分享
+      - 日本(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 8
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - 日本(绿头外网集团)(Public) 9
+      - 台湾-中继-02(CNRelay Taiwan02)
+      - "[VIP]韩国4|华中入口|1x"
+      - 日本-中继-07(CNRelay Japan07)
+      - V4-中转3449|广东W-香港HGC|解锁|x2.5
+      - 日本(绿头外网集团)(Public) 10
+      - 香港3-Baron小浪浪分享
+      - 台湾-中继-06(CNRelay Taiwan06)
+      - 韩国-Baron小浪浪分享
+      - 新加坡(绿头外网集团)(Public) 8
+      - 香港 Hongkong HKT●
+      - 美国(绿头外网集团)(Public) 9
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - 香港1-Baron小浪浪分享
+      - 馬來西亞(绿头外网集团)(Public)
+      - 香港4-Baron小浪浪分享
+      - 韩国-优化
+      - 台湾-中继-03(CNRelay Taiwan03)
+      - 日本(绿头外网集团)(Public) 11 2
+      - 台湾-中继-05(CNRelay Taiwan05)
+      - 日本(绿头外网集团)(Public) 8
+      - 新加坡-优化
+      - 【测试】深圳 -> 日本 A
+      - 愛沙尼亞(绿头外网集团)(Public) 2
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - 新加坡-优化2
+      - 俄罗斯(绿头外网集团)(Public)
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3302|广东H-台湾|解锁|x1.0
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - 日本(绿头外网集团)(Public) 12
+      - 日本-Baron小浪浪分享
+      - V3-中转3383|广东U-台湾|解锁|x1.5
+      - V3-中转3317|广东U-台湾|解锁|x1.5
+      - 馬來西亞(绿头外网集团)(Public) 2
+      - 倾城极速@qcjs1
+      - 美国(绿头外网集团)(Public) 11
+      - 新加坡-Baron小浪浪分享
+      - 美国(绿头外网集团)(Public) 11 2
+      - 新加坡-中继-09(CNRelay Singapore09)
+      - V4-中转3560|广东G-新加坡|x2.0
+      - 日本-中继-10(CNRelay Japan10)
+      - 美国(绿头外网集团)(Public) 14
+      - 新加坡-中继-06(CNRelay Singapore06)
+      - 韩国(绿头外网集团)(Public) 3
+      - 新加坡-中继-08(CNRelay Singapore08)
+      - 新加坡-中继-05(CNRelay Singapore05)
+      - 日本(绿头外网集团)(Public) 4
+      - 日本-中继-06(CNRelay Japan06)
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 12
+      - 日本-中继-09(CNRelay Japan09)
+      - 美国(绿头外网集团)(Public) 15
+      - 韩国-中继-01(CNRelay Korea01)
+      - 韩国(绿头外网集团)(Public) 3 2
+      - 美国-中继-06(CNRelay USA06)
+      - CN_中国_油管 TG 8度科技 35
+      - 美国-中继-03(CNRelay USA03)
+      - 韩国(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public) 6
+      - 美国-中继-05(CNRelay USA05)
+      - 荷兰(绿头外网集团)(Public)
+      - 新加坡-中继-04(CNRelay Singapore04)
+      - 韩国-中继-04(CNRelay Korea04)
+      - 韩国-中继-03(CNRelay Korea03)
+      - 韩国-中继-02(CNRelay Korea02)
+      - 倾城极速@qcjs1 4
+      - 英国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 6
+      - US_美国_油管 TG 8度科技 3
+      - 【测试】深圳 -> 新加坡 A
+      - Makati-Eastern-free
+      - 俄羅斯(绿头外网集团)(Public)
+      - 倾城极速@qcjs1 3
+      - 菲律宾∞中转
+      - GB_英国_油管 TG 8度科技 3
+      - GB_英国_油管 TG 8度科技
+      - 香港(绿头外网集团)(Public) 7
+      - GB_英国_油管 TG 8度科技 8
+      - 新加坡(绿头外网集团)(Public) 6
+      - GB_英国_油管 TG 8度科技 15
+      - 日本(绿头外网集团)(Public) 4 2
+      - GB_英国_油管 TG 8度科技 2
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 16
+      - 美国(绿头外网集团)(Public) 3
+      - 法國(绿头外网集团)(Public) 3
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - 加拿大(绿头外网集团)(Public) 2
+      - 油管 TG 8度科技
+      - "*🇸🇬SG -323 TG@moon365free"
+      - GB_英国_油管 TG 8度科技 4
+      - 美国(绿头外网集团)(Public) 16
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 5
+      - 日本(绿头外网集团)(Public) 2
+      - 台湾-中继-01(CNRelay Taiwan01)
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港(绿头外网集团)(Public) 4
-      - 韩国|01|AWSKR|0.1x|移动起飞
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 82
-      - 电诈专用
-      - 【小库订阅】US_2011
-      - 【小库订阅】US_1605
-      - 【小库订阅】US_2316
-      - youtube:8度科技_美国 21
-      - 【小库订阅】US_2239
-      - 美国(绿头外网集团)(Public) 44
-      - 【小库订阅】US_2254
-      - 【小库订阅】US_1690
-      - 【小库订阅】US_2284
-      - youtube:8度科技_英国 4
-      - 【小库订阅】US_2222
-      - youtube:8度科技_美国 51
-      - youtube:8度科技_美国 33
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 21
-      - 美国(绿头外网集团)(Public) 21
-      - youtube:8度科技_美国 29
-      - 加拿大(绿头外网集团)(Public) 21
-      - 【小库订阅】US_2025
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 69
-      - youtube:8度科技_美国 112
-      - 【小库订阅】US_1825
-      - 【小库订阅】US_1657
-      - Canada 1 (t.me/SurfShark_ALA)
-      - 加拿大(绿头外网集团)(Public) 4
-      - youtube:8度科技_加拿大 23
-      - youtube:8度科技_美国 68
-      - 【小库订阅】US_2134
-      - youtube:8度科技_美国 116
-      - 【小库订阅】US_1793
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 8
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 73
-      - youtube:8度科技_加拿大 19
-      - youtube:8度科技_美国 24
-      - "*🇫🇷FR -1042 TG@小库订阅"
-      - youtube:8度科技_加拿大 44
-      - youtube:8度科技_加拿大 25
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 77
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 49
-      - 美国(绿头外网集团)(Public) 26
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 30
-      - 【小库订阅】US_1874
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 9
-      - youtube:8度科技_加拿大 45
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 12
-      - youtube:8度科技_加拿大 42
-      - 加拿大(绿头外网集团)(Public) 11
-      - "*🇺🇸US -1406 TG@小库订阅"
-      - 【小库订阅】US_2506
+      - 香港HKT-优化
+      - 香港2-Baron小浪浪分享
+      - 日本(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 8
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - 日本(绿头外网集团)(Public) 9
+      - 台湾-中继-02(CNRelay Taiwan02)
+      - "[VIP]韩国4|华中入口|1x"
+      - 日本-中继-07(CNRelay Japan07)
+      - V4-中转3449|广东W-香港HGC|解锁|x2.5
+      - 日本(绿头外网集团)(Public) 10
+      - 香港3-Baron小浪浪分享
+      - 台湾-中继-06(CNRelay Taiwan06)
+      - 韩国-Baron小浪浪分享
+      - 新加坡(绿头外网集团)(Public) 8
+      - 香港 Hongkong HKT●
+      - 美国(绿头外网集团)(Public) 9
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - 香港1-Baron小浪浪分享
+      - 馬來西亞(绿头外网集团)(Public)
+      - 香港4-Baron小浪浪分享
+      - 韩国-优化
+      - 台湾-中继-03(CNRelay Taiwan03)
+      - 日本(绿头外网集团)(Public) 11 2
+      - 台湾-中继-05(CNRelay Taiwan05)
+      - 日本(绿头外网集团)(Public) 8
+      - 新加坡-优化
+      - 【测试】深圳 -> 日本 A
+      - 愛沙尼亞(绿头外网集团)(Public) 2
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - 新加坡-优化2
+      - 俄罗斯(绿头外网集团)(Public)
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3302|广东H-台湾|解锁|x1.0
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - 日本(绿头外网集团)(Public) 12
+      - 日本-Baron小浪浪分享
+      - V3-中转3383|广东U-台湾|解锁|x1.5
+      - V3-中转3317|广东U-台湾|解锁|x1.5
+      - 馬來西亞(绿头外网集团)(Public) 2
+      - 倾城极速@qcjs1
+      - 美国(绿头外网集团)(Public) 11
+      - 新加坡-Baron小浪浪分享
+      - 美国(绿头外网集团)(Public) 11 2
+      - 新加坡-中继-09(CNRelay Singapore09)
+      - V4-中转3560|广东G-新加坡|x2.0
+      - 日本-中继-10(CNRelay Japan10)
+      - 美国(绿头外网集团)(Public) 14
+      - 新加坡-中继-06(CNRelay Singapore06)
+      - 韩国(绿头外网集团)(Public) 3
+      - 新加坡-中继-08(CNRelay Singapore08)
+      - 新加坡-中继-05(CNRelay Singapore05)
+      - 日本(绿头外网集团)(Public) 4
+      - 日本-中继-06(CNRelay Japan06)
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 12
+      - 日本-中继-09(CNRelay Japan09)
+      - 美国(绿头外网集团)(Public) 15
+      - 韩国-中继-01(CNRelay Korea01)
+      - 韩国(绿头外网集团)(Public) 3 2
+      - 美国-中继-06(CNRelay USA06)
+      - CN_中国_油管 TG 8度科技 35
+      - 美国-中继-03(CNRelay USA03)
+      - 韩国(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public) 6
+      - 美国-中继-05(CNRelay USA05)
+      - 荷兰(绿头外网集团)(Public)
+      - 新加坡-中继-04(CNRelay Singapore04)
+      - 韩国-中继-04(CNRelay Korea04)
+      - 韩国-中继-03(CNRelay Korea03)
+      - 韩国-中继-02(CNRelay Korea02)
+      - 倾城极速@qcjs1 4
+      - 英国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 6
+      - US_美国_油管 TG 8度科技 3
+      - 【测试】深圳 -> 新加坡 A
+      - Makati-Eastern-free
+      - 俄羅斯(绿头外网集团)(Public)
+      - 倾城极速@qcjs1 3
+      - 菲律宾∞中转
+      - GB_英国_油管 TG 8度科技 3
+      - GB_英国_油管 TG 8度科技
+      - 香港(绿头外网集团)(Public) 7
+      - GB_英国_油管 TG 8度科技 8
+      - 新加坡(绿头外网集团)(Public) 6
+      - GB_英国_油管 TG 8度科技 15
+      - 日本(绿头外网集团)(Public) 4 2
+      - GB_英国_油管 TG 8度科技 2
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 16
+      - 美国(绿头外网集团)(Public) 3
+      - 法國(绿头外网集团)(Public) 3
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - 加拿大(绿头外网集团)(Public) 2
+      - 油管 TG 8度科技
+      - "*🇸🇬SG -323 TG@moon365free"
+      - GB_英国_油管 TG 8度科技 4
+      - 美国(绿头外网集团)(Public) 16
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 5
+      - 日本(绿头外网集团)(Public) 2
+      - 台湾-中继-01(CNRelay Taiwan01)
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -248,236 +468,478 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 香港(绿头外网集团)(Public) 4
-      - 韩国|01|AWSKR|0.1x|移动起飞
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 82
-      - 电诈专用
-      - 【小库订阅】US_2011
-      - 【小库订阅】US_1605
-      - 【小库订阅】US_2316
-      - youtube:8度科技_美国 21
-      - 【小库订阅】US_2239
-      - 美国(绿头外网集团)(Public) 44
-      - 【小库订阅】US_2254
-      - 【小库订阅】US_1690
-      - 【小库订阅】US_2284
-      - youtube:8度科技_英国 4
-      - 【小库订阅】US_2222
-      - youtube:8度科技_美国 51
-      - youtube:8度科技_美国 33
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 21
-      - 美国(绿头外网集团)(Public) 21
-      - youtube:8度科技_美国 29
-      - 加拿大(绿头外网集团)(Public) 21
-      - 【小库订阅】US_2025
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 69
-      - youtube:8度科技_美国 112
-      - 【小库订阅】US_1825
-      - 【小库订阅】US_1657
-      - Canada 1 (t.me/SurfShark_ALA)
-      - 加拿大(绿头外网集团)(Public) 4
-      - youtube:8度科技_加拿大 23
-      - youtube:8度科技_美国 68
-      - 【小库订阅】US_2134
-      - youtube:8度科技_美国 116
-      - 【小库订阅】US_1793
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 8
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 73
-      - youtube:8度科技_加拿大 19
-      - youtube:8度科技_美国 24
-      - "*🇫🇷FR -1042 TG@小库订阅"
-      - youtube:8度科技_加拿大 44
-      - youtube:8度科技_加拿大 25
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 77
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 49
-      - 美国(绿头外网集团)(Public) 26
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 30
-      - 【小库订阅】US_1874
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 9
-      - youtube:8度科技_加拿大 45
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 12
-      - youtube:8度科技_加拿大 42
-      - 加拿大(绿头外网集团)(Public) 11
-      - "*🇺🇸US -1406 TG@小库订阅"
-      - 【小库订阅】US_2506
+      - 香港HKT-优化
+      - 香港2-Baron小浪浪分享
+      - 日本(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 8
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - 日本(绿头外网集团)(Public) 9
+      - 台湾-中继-02(CNRelay Taiwan02)
+      - "[VIP]韩国4|华中入口|1x"
+      - 日本-中继-07(CNRelay Japan07)
+      - V4-中转3449|广东W-香港HGC|解锁|x2.5
+      - 日本(绿头外网集团)(Public) 10
+      - 香港3-Baron小浪浪分享
+      - 台湾-中继-06(CNRelay Taiwan06)
+      - 韩国-Baron小浪浪分享
+      - 新加坡(绿头外网集团)(Public) 8
+      - 香港 Hongkong HKT●
+      - 美国(绿头外网集团)(Public) 9
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - 香港1-Baron小浪浪分享
+      - 馬來西亞(绿头外网集团)(Public)
+      - 香港4-Baron小浪浪分享
+      - 韩国-优化
+      - 台湾-中继-03(CNRelay Taiwan03)
+      - 日本(绿头外网集团)(Public) 11 2
+      - 台湾-中继-05(CNRelay Taiwan05)
+      - 日本(绿头外网集团)(Public) 8
+      - 新加坡-优化
+      - 【测试】深圳 -> 日本 A
+      - 愛沙尼亞(绿头外网集团)(Public) 2
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - 新加坡-优化2
+      - 俄罗斯(绿头外网集团)(Public)
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3302|广东H-台湾|解锁|x1.0
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - 日本(绿头外网集团)(Public) 12
+      - 日本-Baron小浪浪分享
+      - V3-中转3383|广东U-台湾|解锁|x1.5
+      - V3-中转3317|广东U-台湾|解锁|x1.5
+      - 馬來西亞(绿头外网集团)(Public) 2
+      - 倾城极速@qcjs1
+      - 美国(绿头外网集团)(Public) 11
+      - 新加坡-Baron小浪浪分享
+      - 美国(绿头外网集团)(Public) 11 2
+      - 新加坡-中继-09(CNRelay Singapore09)
+      - V4-中转3560|广东G-新加坡|x2.0
+      - 日本-中继-10(CNRelay Japan10)
+      - 美国(绿头外网集团)(Public) 14
+      - 新加坡-中继-06(CNRelay Singapore06)
+      - 韩国(绿头外网集团)(Public) 3
+      - 新加坡-中继-08(CNRelay Singapore08)
+      - 新加坡-中继-05(CNRelay Singapore05)
+      - 日本(绿头外网集团)(Public) 4
+      - 日本-中继-06(CNRelay Japan06)
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 12
+      - 日本-中继-09(CNRelay Japan09)
+      - 美国(绿头外网集团)(Public) 15
+      - 韩国-中继-01(CNRelay Korea01)
+      - 韩国(绿头外网集团)(Public) 3 2
+      - 美国-中继-06(CNRelay USA06)
+      - CN_中国_油管 TG 8度科技 35
+      - 美国-中继-03(CNRelay USA03)
+      - 韩国(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public) 6
+      - 美国-中继-05(CNRelay USA05)
+      - 荷兰(绿头外网集团)(Public)
+      - 新加坡-中继-04(CNRelay Singapore04)
+      - 韩国-中继-04(CNRelay Korea04)
+      - 韩国-中继-03(CNRelay Korea03)
+      - 韩国-中继-02(CNRelay Korea02)
+      - 倾城极速@qcjs1 4
+      - 英国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 6
+      - US_美国_油管 TG 8度科技 3
+      - 【测试】深圳 -> 新加坡 A
+      - Makati-Eastern-free
+      - 俄羅斯(绿头外网集团)(Public)
+      - 倾城极速@qcjs1 3
+      - 菲律宾∞中转
+      - GB_英国_油管 TG 8度科技 3
+      - GB_英国_油管 TG 8度科技
+      - 香港(绿头外网集团)(Public) 7
+      - GB_英国_油管 TG 8度科技 8
+      - 新加坡(绿头外网集团)(Public) 6
+      - GB_英国_油管 TG 8度科技 15
+      - 日本(绿头外网集团)(Public) 4 2
+      - GB_英国_油管 TG 8度科技 2
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 16
+      - 美国(绿头外网集团)(Public) 3
+      - 法國(绿头外网集团)(Public) 3
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - 加拿大(绿头外网集团)(Public) 2
+      - 油管 TG 8度科技
+      - "*🇸🇬SG -323 TG@moon365free"
+      - GB_英国_油管 TG 8度科技 4
+      - 美国(绿头外网集团)(Public) 16
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 5
+      - 日本(绿头外网集团)(Public) 2
+      - 台湾-中继-01(CNRelay Taiwan01)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港(绿头外网集团)(Public) 4
+      - 香港HKT-优化
+      - 香港2-Baron小浪浪分享
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - 台湾-中继-02(CNRelay Taiwan02)
+      - V4-中转3449|广东W-香港HGC|解锁|x2.5
+      - 香港3-Baron小浪浪分享
+      - 台湾-中继-06(CNRelay Taiwan06)
+      - 香港 Hongkong HKT●
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - 香港1-Baron小浪浪分享
+      - 香港4-Baron小浪浪分享
+      - 台湾-中继-03(CNRelay Taiwan03)
+      - 台湾-中继-05(CNRelay Taiwan05)
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3302|广东H-台湾|解锁|x1.0
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - V3-中转3383|广东U-台湾|解锁|x1.5
+      - V3-中转3317|广东U-台湾|解锁|x1.5
+      - 香港(绿头外网集团)(Public) 6
+      - 香港(绿头外网集团)(Public) 7
+      - 台湾-中继-01(CNRelay Taiwan01)
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 香港(绿头外网集团)(Public) 4
-      - 韩国|01|AWSKR|0.1x|移动起飞
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 82
-      - 电诈专用
-      - 【小库订阅】US_2011
-      - 【小库订阅】US_1605
-      - 【小库订阅】US_2316
-      - youtube:8度科技_美国 21
-      - 【小库订阅】US_2239
-      - 美国(绿头外网集团)(Public) 44
-      - 【小库订阅】US_2254
-      - 【小库订阅】US_1690
-      - 【小库订阅】US_2284
-      - youtube:8度科技_英国 4
-      - 【小库订阅】US_2222
-      - youtube:8度科技_美国 51
-      - youtube:8度科技_美国 33
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 21
-      - 美国(绿头外网集团)(Public) 21
-      - youtube:8度科技_美国 29
-      - 加拿大(绿头外网集团)(Public) 21
-      - 【小库订阅】US_2025
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 69
-      - youtube:8度科技_美国 112
-      - 【小库订阅】US_1825
-      - 【小库订阅】US_1657
-      - Canada 1 (t.me/SurfShark_ALA)
-      - 加拿大(绿头外网集团)(Public) 4
-      - youtube:8度科技_加拿大 23
-      - youtube:8度科技_美国 68
-      - 【小库订阅】US_2134
-      - youtube:8度科技_美国 116
-      - 【小库订阅】US_1793
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 8
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 73
-      - youtube:8度科技_加拿大 19
-      - youtube:8度科技_美国 24
-      - "*🇫🇷FR -1042 TG@小库订阅"
-      - youtube:8度科技_加拿大 44
-      - youtube:8度科技_加拿大 25
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 77
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 49
-      - 美国(绿头外网集团)(Public) 26
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 30
-      - 【小库订阅】US_1874
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 9
-      - youtube:8度科技_加拿大 45
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 12
-      - youtube:8度科技_加拿大 42
-      - 加拿大(绿头外网集团)(Public) 11
-      - "*🇺🇸US -1406 TG@小库订阅"
-      - 【小库订阅】US_2506
+      - 香港HKT-优化
+      - 香港2-Baron小浪浪分享
+      - 日本(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 8
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - 日本(绿头外网集团)(Public) 9
+      - 台湾-中继-02(CNRelay Taiwan02)
+      - "[VIP]韩国4|华中入口|1x"
+      - 日本-中继-07(CNRelay Japan07)
+      - V4-中转3449|广东W-香港HGC|解锁|x2.5
+      - 日本(绿头外网集团)(Public) 10
+      - 香港3-Baron小浪浪分享
+      - 台湾-中继-06(CNRelay Taiwan06)
+      - 韩国-Baron小浪浪分享
+      - 新加坡(绿头外网集团)(Public) 8
+      - 香港 Hongkong HKT●
+      - 美国(绿头外网集团)(Public) 9
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - 香港1-Baron小浪浪分享
+      - 馬來西亞(绿头外网集团)(Public)
+      - 香港4-Baron小浪浪分享
+      - 韩国-优化
+      - 台湾-中继-03(CNRelay Taiwan03)
+      - 日本(绿头外网集团)(Public) 11 2
+      - 台湾-中继-05(CNRelay Taiwan05)
+      - 日本(绿头外网集团)(Public) 8
+      - 新加坡-优化
+      - 【测试】深圳 -> 日本 A
+      - 愛沙尼亞(绿头外网集团)(Public) 2
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - 新加坡-优化2
+      - 俄罗斯(绿头外网集团)(Public)
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3302|广东H-台湾|解锁|x1.0
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - 日本(绿头外网集团)(Public) 12
+      - 日本-Baron小浪浪分享
+      - V3-中转3383|广东U-台湾|解锁|x1.5
+      - V3-中转3317|广东U-台湾|解锁|x1.5
+      - 馬來西亞(绿头外网集团)(Public) 2
+      - 倾城极速@qcjs1
+      - 美国(绿头外网集团)(Public) 11
+      - 新加坡-Baron小浪浪分享
+      - 美国(绿头外网集团)(Public) 11 2
+      - 新加坡-中继-09(CNRelay Singapore09)
+      - V4-中转3560|广东G-新加坡|x2.0
+      - 日本-中继-10(CNRelay Japan10)
+      - 美国(绿头外网集团)(Public) 14
+      - 新加坡-中继-06(CNRelay Singapore06)
+      - 韩国(绿头外网集团)(Public) 3
+      - 新加坡-中继-08(CNRelay Singapore08)
+      - 新加坡-中继-05(CNRelay Singapore05)
+      - 日本(绿头外网集团)(Public) 4
+      - 日本-中继-06(CNRelay Japan06)
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 12
+      - 日本-中继-09(CNRelay Japan09)
+      - 美国(绿头外网集团)(Public) 15
+      - 韩国-中继-01(CNRelay Korea01)
+      - 韩国(绿头外网集团)(Public) 3 2
+      - 美国-中继-06(CNRelay USA06)
+      - CN_中国_油管 TG 8度科技 35
+      - 美国-中继-03(CNRelay USA03)
+      - 韩国(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public) 6
+      - 美国-中继-05(CNRelay USA05)
+      - 荷兰(绿头外网集团)(Public)
+      - 新加坡-中继-04(CNRelay Singapore04)
+      - 韩国-中继-04(CNRelay Korea04)
+      - 韩国-中继-03(CNRelay Korea03)
+      - 韩国-中继-02(CNRelay Korea02)
+      - 倾城极速@qcjs1 4
+      - 英国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 6
+      - US_美国_油管 TG 8度科技 3
+      - 【测试】深圳 -> 新加坡 A
+      - Makati-Eastern-free
+      - 俄羅斯(绿头外网集团)(Public)
+      - 倾城极速@qcjs1 3
+      - 菲律宾∞中转
+      - GB_英国_油管 TG 8度科技 3
+      - GB_英国_油管 TG 8度科技
+      - 香港(绿头外网集团)(Public) 7
+      - GB_英国_油管 TG 8度科技 8
+      - 新加坡(绿头外网集团)(Public) 6
+      - GB_英国_油管 TG 8度科技 15
+      - 日本(绿头外网集团)(Public) 4 2
+      - GB_英国_油管 TG 8度科技 2
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 16
+      - 美国(绿头外网集团)(Public) 3
+      - 法國(绿头外网集团)(Public) 3
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - 加拿大(绿头外网集团)(Public) 2
+      - 油管 TG 8度科技
+      - "*🇸🇬SG -323 TG@moon365free"
+      - GB_英国_油管 TG 8度科技 4
+      - 美国(绿头外网集团)(Public) 16
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 5
+      - 日本(绿头外网集团)(Public) 2
+      - 台湾-中继-01(CNRelay Taiwan01)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 香港(绿头外网集团)(Public) 4
-      - 韩国|01|AWSKR|0.1x|移动起飞
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 82
-      - 电诈专用
-      - 【小库订阅】US_2011
-      - 【小库订阅】US_1605
-      - 【小库订阅】US_2316
-      - youtube:8度科技_美国 21
-      - 【小库订阅】US_2239
-      - 美国(绿头外网集团)(Public) 44
-      - 【小库订阅】US_2254
-      - 【小库订阅】US_1690
-      - 【小库订阅】US_2284
-      - youtube:8度科技_英国 4
-      - 【小库订阅】US_2222
-      - youtube:8度科技_美国 51
-      - youtube:8度科技_美国 33
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 21
-      - 美国(绿头外网集团)(Public) 21
-      - youtube:8度科技_美国 29
-      - 加拿大(绿头外网集团)(Public) 21
-      - 【小库订阅】US_2025
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 69
-      - youtube:8度科技_美国 112
-      - 【小库订阅】US_1825
-      - 【小库订阅】US_1657
-      - Canada 1 (t.me/SurfShark_ALA)
-      - 加拿大(绿头外网集团)(Public) 4
-      - youtube:8度科技_加拿大 23
-      - youtube:8度科技_美国 68
-      - 【小库订阅】US_2134
-      - youtube:8度科技_美国 116
-      - 【小库订阅】US_1793
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 8
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 73
-      - youtube:8度科技_加拿大 19
-      - youtube:8度科技_美国 24
-      - "*🇫🇷FR -1042 TG@小库订阅"
-      - youtube:8度科技_加拿大 44
-      - youtube:8度科技_加拿大 25
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 77
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 49
-      - 美国(绿头外网集团)(Public) 26
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 30
-      - 【小库订阅】US_1874
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 9
-      - youtube:8度科技_加拿大 45
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 12
-      - youtube:8度科技_加拿大 42
-      - 加拿大(绿头外网集团)(Public) 11
-      - "*🇺🇸US -1406 TG@小库订阅"
-      - 【小库订阅】US_2506
+      - 香港HKT-优化
+      - 香港2-Baron小浪浪分享
+      - 日本(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 8
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - 日本(绿头外网集团)(Public) 9
+      - 台湾-中继-02(CNRelay Taiwan02)
+      - "[VIP]韩国4|华中入口|1x"
+      - 日本-中继-07(CNRelay Japan07)
+      - V4-中转3449|广东W-香港HGC|解锁|x2.5
+      - 日本(绿头外网集团)(Public) 10
+      - 香港3-Baron小浪浪分享
+      - 台湾-中继-06(CNRelay Taiwan06)
+      - 韩国-Baron小浪浪分享
+      - 新加坡(绿头外网集团)(Public) 8
+      - 香港 Hongkong HKT●
+      - 美国(绿头外网集团)(Public) 9
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - 香港1-Baron小浪浪分享
+      - 馬來西亞(绿头外网集团)(Public)
+      - 香港4-Baron小浪浪分享
+      - 韩国-优化
+      - 台湾-中继-03(CNRelay Taiwan03)
+      - 日本(绿头外网集团)(Public) 11 2
+      - 台湾-中继-05(CNRelay Taiwan05)
+      - 日本(绿头外网集团)(Public) 8
+      - 新加坡-优化
+      - 【测试】深圳 -> 日本 A
+      - 愛沙尼亞(绿头外网集团)(Public) 2
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - 新加坡-优化2
+      - 俄罗斯(绿头外网集团)(Public)
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3302|广东H-台湾|解锁|x1.0
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - 日本(绿头外网集团)(Public) 12
+      - 日本-Baron小浪浪分享
+      - V3-中转3383|广东U-台湾|解锁|x1.5
+      - V3-中转3317|广东U-台湾|解锁|x1.5
+      - 馬來西亞(绿头外网集团)(Public) 2
+      - 倾城极速@qcjs1
+      - 美国(绿头外网集团)(Public) 11
+      - 新加坡-Baron小浪浪分享
+      - 美国(绿头外网集团)(Public) 11 2
+      - 新加坡-中继-09(CNRelay Singapore09)
+      - V4-中转3560|广东G-新加坡|x2.0
+      - 日本-中继-10(CNRelay Japan10)
+      - 美国(绿头外网集团)(Public) 14
+      - 新加坡-中继-06(CNRelay Singapore06)
+      - 韩国(绿头外网集团)(Public) 3
+      - 新加坡-中继-08(CNRelay Singapore08)
+      - 新加坡-中继-05(CNRelay Singapore05)
+      - 日本(绿头外网集团)(Public) 4
+      - 日本-中继-06(CNRelay Japan06)
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 12
+      - 日本-中继-09(CNRelay Japan09)
+      - 美国(绿头外网集团)(Public) 15
+      - 韩国-中继-01(CNRelay Korea01)
+      - 韩国(绿头外网集团)(Public) 3 2
+      - 美国-中继-06(CNRelay USA06)
+      - CN_中国_油管 TG 8度科技 35
+      - 美国-中继-03(CNRelay USA03)
+      - 韩国(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public) 6
+      - 美国-中继-05(CNRelay USA05)
+      - 荷兰(绿头外网集团)(Public)
+      - 新加坡-中继-04(CNRelay Singapore04)
+      - 韩国-中继-04(CNRelay Korea04)
+      - 韩国-中继-03(CNRelay Korea03)
+      - 韩国-中继-02(CNRelay Korea02)
+      - 倾城极速@qcjs1 4
+      - 英国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 6
+      - US_美国_油管 TG 8度科技 3
+      - 【测试】深圳 -> 新加坡 A
+      - Makati-Eastern-free
+      - 俄羅斯(绿头外网集团)(Public)
+      - 倾城极速@qcjs1 3
+      - 菲律宾∞中转
+      - GB_英国_油管 TG 8度科技 3
+      - GB_英国_油管 TG 8度科技
+      - 香港(绿头外网集团)(Public) 7
+      - GB_英国_油管 TG 8度科技 8
+      - 新加坡(绿头外网集团)(Public) 6
+      - GB_英国_油管 TG 8度科技 15
+      - 日本(绿头外网集团)(Public) 4 2
+      - GB_英国_油管 TG 8度科技 2
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 16
+      - 美国(绿头外网集团)(Public) 3
+      - 法國(绿头外网集团)(Public) 3
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - 加拿大(绿头外网集团)(Public) 2
+      - 油管 TG 8度科技
+      - "*🇸🇬SG -323 TG@moon365free"
+      - GB_英国_油管 TG 8度科技 4
+      - 美国(绿头外网集团)(Public) 16
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 5
+      - 日本(绿头外网集团)(Public) 2
+      - 台湾-中继-01(CNRelay Taiwan01)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港(绿头外网集团)(Public) 4
-      - 韩国|01|AWSKR|0.1x|移动起飞
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 82
-      - 电诈专用
-      - 【小库订阅】US_2011
-      - 【小库订阅】US_1605
-      - 【小库订阅】US_2316
-      - youtube:8度科技_美国 21
-      - 【小库订阅】US_2239
-      - 美国(绿头外网集团)(Public) 44
-      - 【小库订阅】US_2254
-      - 【小库订阅】US_1690
-      - 【小库订阅】US_2284
-      - youtube:8度科技_英国 4
-      - 【小库订阅】US_2222
-      - youtube:8度科技_美国 51
-      - youtube:8度科技_美国 33
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 21
-      - 美国(绿头外网集团)(Public) 21
-      - youtube:8度科技_美国 29
-      - 加拿大(绿头外网集团)(Public) 21
-      - 【小库订阅】US_2025
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 69
-      - youtube:8度科技_美国 112
-      - 【小库订阅】US_1825
-      - 【小库订阅】US_1657
-      - Canada 1 (t.me/SurfShark_ALA)
-      - 加拿大(绿头外网集团)(Public) 4
-      - youtube:8度科技_加拿大 23
-      - youtube:8度科技_美国 68
-      - 【小库订阅】US_2134
-      - youtube:8度科技_美国 116
-      - 【小库订阅】US_1793
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 8
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 73
-      - youtube:8度科技_加拿大 19
-      - youtube:8度科技_美国 24
-      - "*🇫🇷FR -1042 TG@小库订阅"
-      - youtube:8度科技_加拿大 44
-      - youtube:8度科技_加拿大 25
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 77
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 49
-      - 美国(绿头外网集团)(Public) 26
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 30
-      - 【小库订阅】US_1874
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 9
-      - youtube:8度科技_加拿大 45
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 12
-      - youtube:8度科技_加拿大 42
-      - 加拿大(绿头外网集团)(Public) 11
-      - "*🇺🇸US -1406 TG@小库订阅"
-      - 【小库订阅】US_2506
+      - 香港HKT-优化
+      - 香港2-Baron小浪浪分享
+      - 日本(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 8
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - 日本(绿头外网集团)(Public) 9
+      - 台湾-中继-02(CNRelay Taiwan02)
+      - "[VIP]韩国4|华中入口|1x"
+      - 日本-中继-07(CNRelay Japan07)
+      - V4-中转3449|广东W-香港HGC|解锁|x2.5
+      - 日本(绿头外网集团)(Public) 10
+      - 香港3-Baron小浪浪分享
+      - 台湾-中继-06(CNRelay Taiwan06)
+      - 韩国-Baron小浪浪分享
+      - 新加坡(绿头外网集团)(Public) 8
+      - 香港 Hongkong HKT●
+      - 美国(绿头外网集团)(Public) 9
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - 香港1-Baron小浪浪分享
+      - 馬來西亞(绿头外网集团)(Public)
+      - 香港4-Baron小浪浪分享
+      - 韩国-优化
+      - 台湾-中继-03(CNRelay Taiwan03)
+      - 日本(绿头外网集团)(Public) 11 2
+      - 台湾-中继-05(CNRelay Taiwan05)
+      - 日本(绿头外网集团)(Public) 8
+      - 新加坡-优化
+      - 【测试】深圳 -> 日本 A
+      - 愛沙尼亞(绿头外网集团)(Public) 2
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - 新加坡-优化2
+      - 俄罗斯(绿头外网集团)(Public)
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3302|广东H-台湾|解锁|x1.0
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - 日本(绿头外网集团)(Public) 12
+      - 日本-Baron小浪浪分享
+      - V3-中转3383|广东U-台湾|解锁|x1.5
+      - V3-中转3317|广东U-台湾|解锁|x1.5
+      - 馬來西亞(绿头外网集团)(Public) 2
+      - 倾城极速@qcjs1
+      - 美国(绿头外网集团)(Public) 11
+      - 新加坡-Baron小浪浪分享
+      - 美国(绿头外网集团)(Public) 11 2
+      - 新加坡-中继-09(CNRelay Singapore09)
+      - V4-中转3560|广东G-新加坡|x2.0
+      - 日本-中继-10(CNRelay Japan10)
+      - 美国(绿头外网集团)(Public) 14
+      - 新加坡-中继-06(CNRelay Singapore06)
+      - 韩国(绿头外网集团)(Public) 3
+      - 新加坡-中继-08(CNRelay Singapore08)
+      - 新加坡-中继-05(CNRelay Singapore05)
+      - 日本(绿头外网集团)(Public) 4
+      - 日本-中继-06(CNRelay Japan06)
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 12
+      - 日本-中继-09(CNRelay Japan09)
+      - 美国(绿头外网集团)(Public) 15
+      - 韩国-中继-01(CNRelay Korea01)
+      - 韩国(绿头外网集团)(Public) 3 2
+      - 美国-中继-06(CNRelay USA06)
+      - CN_中国_油管 TG 8度科技 35
+      - 美国-中继-03(CNRelay USA03)
+      - 韩国(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public) 6
+      - 美国-中继-05(CNRelay USA05)
+      - 荷兰(绿头外网集团)(Public)
+      - 新加坡-中继-04(CNRelay Singapore04)
+      - 韩国-中继-04(CNRelay Korea04)
+      - 韩国-中继-03(CNRelay Korea03)
+      - 韩国-中继-02(CNRelay Korea02)
+      - 倾城极速@qcjs1 4
+      - 英国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 6
+      - US_美国_油管 TG 8度科技 3
+      - 【测试】深圳 -> 新加坡 A
+      - Makati-Eastern-free
+      - 俄羅斯(绿头外网集团)(Public)
+      - 倾城极速@qcjs1 3
+      - 菲律宾∞中转
+      - GB_英国_油管 TG 8度科技 3
+      - GB_英国_油管 TG 8度科技
+      - 香港(绿头外网集团)(Public) 7
+      - GB_英国_油管 TG 8度科技 8
+      - 新加坡(绿头外网集团)(Public) 6
+      - GB_英国_油管 TG 8度科技 15
+      - 日本(绿头外网集团)(Public) 4 2
+      - GB_英国_油管 TG 8度科技 2
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 16
+      - 美国(绿头外网集团)(Public) 3
+      - 法國(绿头外网集团)(Public) 3
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - 加拿大(绿头外网集团)(Public) 2
+      - 油管 TG 8度科技
+      - "*🇸🇬SG -323 TG@moon365free"
+      - GB_英国_油管 TG 8度科技 4
+      - 美国(绿头外网集团)(Public) 16
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 5
+      - 日本(绿头外网集团)(Public) 2
+      - 台湾-中继-01(CNRelay Taiwan01)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -493,58 +955,113 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 香港(绿头外网集团)(Public) 4
-      - 韩国|01|AWSKR|0.1x|移动起飞
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 82
-      - 电诈专用
-      - 【小库订阅】US_2011
-      - 【小库订阅】US_1605
-      - 【小库订阅】US_2316
-      - youtube:8度科技_美国 21
-      - 【小库订阅】US_2239
-      - 美国(绿头外网集团)(Public) 44
-      - 【小库订阅】US_2254
-      - 【小库订阅】US_1690
-      - 【小库订阅】US_2284
-      - youtube:8度科技_英国 4
-      - 【小库订阅】US_2222
-      - youtube:8度科技_美国 51
-      - youtube:8度科技_美国 33
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 21
-      - 美国(绿头外网集团)(Public) 21
-      - youtube:8度科技_美国 29
-      - 加拿大(绿头外网集团)(Public) 21
-      - 【小库订阅】US_2025
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 69
-      - youtube:8度科技_美国 112
-      - 【小库订阅】US_1825
-      - 【小库订阅】US_1657
-      - Canada 1 (t.me/SurfShark_ALA)
-      - 加拿大(绿头外网集团)(Public) 4
-      - youtube:8度科技_加拿大 23
-      - youtube:8度科技_美国 68
-      - 【小库订阅】US_2134
-      - youtube:8度科技_美国 116
-      - 【小库订阅】US_1793
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 8
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 73
-      - youtube:8度科技_加拿大 19
-      - youtube:8度科技_美国 24
-      - "*🇫🇷FR -1042 TG@小库订阅"
-      - youtube:8度科技_加拿大 44
-      - youtube:8度科技_加拿大 25
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 77
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 49
-      - 美国(绿头外网集团)(Public) 26
-      - 美国-高速节点购买：suo.yt/gvip（复制到浏览器打开） 30
-      - 【小库订阅】US_1874
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 9
-      - youtube:8度科技_加拿大 45
-      - 加拿大-高速节点购买：suo.yt/gvip（复制到浏览器打开） 12
-      - youtube:8度科技_加拿大 42
-      - 加拿大(绿头外网集团)(Public) 11
-      - "*🇺🇸US -1406 TG@小库订阅"
-      - 【小库订阅】US_2506
+      - 香港HKT-优化
+      - 香港2-Baron小浪浪分享
+      - 日本(绿头外网集团)(Public) 11
+      - 美国(绿头外网集团)(Public) 8
+      - V4-中转3301|广东H-台湾|解锁|x1.0
+      - 日本(绿头外网集团)(Public) 9
+      - 台湾-中继-02(CNRelay Taiwan02)
+      - "[VIP]韩国4|华中入口|1x"
+      - 日本-中继-07(CNRelay Japan07)
+      - V4-中转3449|广东W-香港HGC|解锁|x2.5
+      - 日本(绿头外网集团)(Public) 10
+      - 香港3-Baron小浪浪分享
+      - 台湾-中继-06(CNRelay Taiwan06)
+      - 韩国-Baron小浪浪分享
+      - 新加坡(绿头外网集团)(Public) 8
+      - 香港 Hongkong HKT●
+      - 美国(绿头外网集团)(Public) 9
+      - V3-中转3316|广东U-台湾|解锁|x1.5
+      - 香港1-Baron小浪浪分享
+      - 馬來西亞(绿头外网集团)(Public)
+      - 香港4-Baron小浪浪分享
+      - 韩国-优化
+      - 台湾-中继-03(CNRelay Taiwan03)
+      - 日本(绿头外网集团)(Public) 11 2
+      - 台湾-中继-05(CNRelay Taiwan05)
+      - 日本(绿头外网集团)(Public) 8
+      - 新加坡-优化
+      - 【测试】深圳 -> 日本 A
+      - 愛沙尼亞(绿头外网集团)(Public) 2
+      - V4-中转3299|广东H-台湾|解锁|x1.0
+      - V4-中转3303|广东H-台湾|解锁|x1.0
+      - 新加坡-优化2
+      - 俄罗斯(绿头外网集团)(Public)
+      - V4-中转3305|广东H-台湾|解锁|x1.0
+      - V4-中转3302|广东H-台湾|解锁|x1.0
+      - V3-中转3185|广东D-香港|解锁|x1.5
+      - 日本(绿头外网集团)(Public) 12
+      - 日本-Baron小浪浪分享
+      - V3-中转3383|广东U-台湾|解锁|x1.5
+      - V3-中转3317|广东U-台湾|解锁|x1.5
+      - 馬來西亞(绿头外网集团)(Public) 2
+      - 倾城极速@qcjs1
+      - 美国(绿头外网集团)(Public) 11
+      - 新加坡-Baron小浪浪分享
+      - 美国(绿头外网集团)(Public) 11 2
+      - 新加坡-中继-09(CNRelay Singapore09)
+      - V4-中转3560|广东G-新加坡|x2.0
+      - 日本-中继-10(CNRelay Japan10)
+      - 美国(绿头外网集团)(Public) 14
+      - 新加坡-中继-06(CNRelay Singapore06)
+      - 韩国(绿头外网集团)(Public) 3
+      - 新加坡-中继-08(CNRelay Singapore08)
+      - 新加坡-中继-05(CNRelay Singapore05)
+      - 日本(绿头外网集团)(Public) 4
+      - 日本-中继-06(CNRelay Japan06)
+      - 美国(绿头外网集团)(Public) 10
+      - 美国(绿头外网集团)(Public) 12
+      - 日本-中继-09(CNRelay Japan09)
+      - 美国(绿头外网集团)(Public) 15
+      - 韩国-中继-01(CNRelay Korea01)
+      - 韩国(绿头外网集团)(Public) 3 2
+      - 美国-中继-06(CNRelay USA06)
+      - CN_中国_油管 TG 8度科技 35
+      - 美国-中继-03(CNRelay USA03)
+      - 韩国(绿头外网集团)(Public) 2
+      - 美国(绿头外网集团)(Public) 6
+      - 美国-中继-05(CNRelay USA05)
+      - 荷兰(绿头外网集团)(Public)
+      - 新加坡-中继-04(CNRelay Singapore04)
+      - 韩国-中继-04(CNRelay Korea04)
+      - 韩国-中继-03(CNRelay Korea03)
+      - 韩国-中继-02(CNRelay Korea02)
+      - 倾城极速@qcjs1 4
+      - 英国(绿头外网集团)(Public)
+      - 香港(绿头外网集团)(Public) 6
+      - US_美国_油管 TG 8度科技 3
+      - 【测试】深圳 -> 新加坡 A
+      - Makati-Eastern-free
+      - 俄羅斯(绿头外网集团)(Public)
+      - 倾城极速@qcjs1 3
+      - 菲律宾∞中转
+      - GB_英国_油管 TG 8度科技 3
+      - GB_英国_油管 TG 8度科技
+      - 香港(绿头外网集团)(Public) 7
+      - GB_英国_油管 TG 8度科技 8
+      - 新加坡(绿头外网集团)(Public) 6
+      - GB_英国_油管 TG 8度科技 15
+      - 日本(绿头外网集团)(Public) 4 2
+      - GB_英国_油管 TG 8度科技 2
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB_英国_油管 TG 8度科技 14
+      - GB_英国_油管 TG 8度科技 12
+      - GB_英国_油管 TG 8度科技 16
+      - 美国(绿头外网集团)(Public) 3
+      - 法國(绿头外网集团)(Public) 3
+      - GB_英国_油管 TG 8度科技 10
+      - GB_英国_油管 TG 8度科技 11
+      - 加拿大(绿头外网集团)(Public) 2
+      - 油管 TG 8度科技
+      - "*🇸🇬SG -323 TG@moon365free"
+      - GB_英国_油管 TG 8度科技 4
+      - 美国(绿头外网集团)(Public) 16
+      - GB_英国_油管 TG 8度科技 9
+      - GB_英国_油管 TG 8度科技 6
+      - GB_英国_油管 TG 8度科技 5
+      - 日本(绿头外网集团)(Public) 2
+      - 台湾-中继-01(CNRelay Taiwan01)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -10746,4 +11263,3 @@ rules:
  - DOMAIN-KEYWORD,XLLiveUD,🎯 全球直连
  - GEOIP,CN,🎯 全球直连
  - MATCH,🐟 漏网之鱼
-1
