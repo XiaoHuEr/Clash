@@ -5,211 +5,131 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 77机场👉魔戒.net, server: sg04.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 76机场👉魔戒.net, server: gdgz.marslink.icu, port: 41109, type: ss, cipher: chacha20-ietf-poly1305, password: 7704a266-a631-41d4-9f73-37f3f7784081, udp: true}
-  - {name: 58机场👉魔戒.net, server: hkt05.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 56机场👉魔戒.net, server: hk05.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 52机场👉魔戒.net, server: sg05.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 49机场👉魔戒.net, server: ir02.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 55机场👉魔戒.net, server: hkt03.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 53机场👉魔戒.net, server: sg06.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 59机场👉魔戒.net, server: hkt02.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 45机场👉魔戒.net, server: jpoo.77710086.xyz, port: 888, type: trojan, password: 887b9ece-45e8-45a1-844c-6991e2b086a8, sni: jpoo.77710086.xyz, skip-cert-verify: true, udp: true}
-  - {name: 50机场👉魔戒.net, server: pvcc01.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 51机场👉魔戒.net, server: ir01.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 23机场👉魔戒.net 2, server: sg08.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 29机场👉魔戒.net 2, server: jp05.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: CN | 05, server: gzyd.wozcjd.xyz, port: 11348, type: ss, cipher: chacha20-ietf-poly1305, password: c753e8a8-e180-4e76-a486-c917273d718b, udp: true}
-  - {name: 26机场👉魔戒.net 2, server: hkt01.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 54机场👉魔戒.net, server: sg11.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: CN | 07, server: hl.111003.gq, port: 11701, type: vmess, uuid: 6775cc89-3599-3985-bbae-6506532b5443, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: hl.111003.gq}, udp: true}
-  - {name: 32机场👉魔戒.net 2, server: tw15.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: CN | 06, server: hl.111003.gq, port: 11810, type: vmess, uuid: 6775cc89-3599-3985-bbae-6506532b5443, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: hl.111003.gq}, udp: true}
-  - {name: 19机场👉魔戒.net, server: tw13.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 24机场👉魔戒.net 2, server: sg10.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 27机场👉魔戒.net 2, server: hr04.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 57机场👉魔戒.net, server: sg07.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 82机场👉魔戒.net, server: kl.pbaplink.xyz, port: 48511, type: trojan, password: a6525e92-f057-4c25-a446-e6fdbec87177, sni: kl.pbaplink.xyz, skip-cert-verify: true, udp: true}
-  - {name: US | 18, server: uscu6.lixiaolong.buzz, port: 1994, type: vmess, uuid: 6775cc89-3599-3985-bbae-6506532b5443, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: uscu6.lixiaolong.buzz}, udp: true}
-  - {name: 28机场👉魔戒.net 2, server: hr05.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 30机场👉魔戒.net 2, server: jp09.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 60机场👉魔戒.net, server: hkt07.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
-  - {name: 47机场👉魔戒.net, server: tghg.77710086.xyz, port: 888, type: trojan, password: 887b9ece-45e8-45a1-844c-6991e2b086a8, sni: tghg.77710086.xyz, skip-cert-verify: true, udp: true}
-  - {name: 愛沙尼亞(绿头外网集团)(Public), server: os2-5.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-5.sstr-api.xyz, skip-cert-verify: true, udp: true}
   - {name: 43机场👉魔戒.net, server: tghk2.77710086.xyz, port: 888, type: trojan, password: 887b9ece-45e8-45a1-844c-6991e2b086a8, sni: tghk2.77710086.xyz, skip-cert-verify: true, udp: true}
-  - {name: FR_油管 TG 8度科技 2, server: 92.243.24.68, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: bIS3QQFwFIm1, udp: true}
-  - {name: 78机场👉魔戒.net, server: 104.208.80.56, port: 8080, type: vmess, uuid: 2c875731-0df7-4e51-842f-b9efca25abc8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shoutingtoutiao3.10010.com}, udp: true}
-  - {name: GB_油管 TG 8度科技, server: 172.99.190.188, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _GB_英国 2, server: 172.99.190.205, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 美国(绿头外网集团)(Public) 7, server: 172.99.190.205, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 3, server: 134.195.196.147, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: RU_油管 TG 8度科技 2, server: 92.223.65.119, port: 443, type: vmess, uuid: 3fd6713f-e036-4ba9-938a-da7843a17a15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
-  - {name: 美國(绿头外网集团)(Public), server: 172.99.190.205, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _CA_加拿大 7, server: 134.195.196.147, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: CA_油管 TG 8度科技 3, server: 134.195.196.147, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 英国(绿头外网集团)(Public) 5, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 俄罗斯千兆-02号, server: 92.223.72.42, port: 443, type: vmess, uuid: ae08412f-5bb9-4be7-8560-1984976a1097, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
-  - {name: _CA_加拿大 2, server: 134.195.196.147, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _CA_加拿大 11, server: 134.195.196.147, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: TG频道@Jsnzk, server: gzbgpss.8n4t.cn, port: 20115, type: trojan, password: 43a29215-a4c6-3b8a-9697-5242c8f09213, sni: gzbgpss.8n4t.cn, skip-cert-verify: true, udp: true}
+  - {name: 47机场👉魔戒.net, server: tghg.77710086.xyz, port: 888, type: trojan, password: 887b9ece-45e8-45a1-844c-6991e2b086a8, sni: tghg.77710086.xyz, skip-cert-verify: true, udp: true}
+  - {name: 日本(绿头外网集团)(Public), server: 1.earths.team, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, sni: 1.earths.team, skip-cert-verify: true, udp: true}
+  - {name: US | 17, server: uscu6.lixiaolong.buzz, port: 1994, type: vmess, uuid: 6775cc89-3599-3985-bbae-6506532b5443, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: uscu6.lixiaolong.buzz}, udp: true}
+  - {name: US | 16, server: uscu5.lixiaolong.buzz, port: 1995, type: vmess, uuid: 6775cc89-3599-3985-bbae-6506532b5443, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: uscu5.lixiaolong.buzz}, udp: true}
+  - {name: CN | 09, server: hl.111003.gq, port: 11800, type: vmess, uuid: 6775cc89-3599-3985-bbae-6506532b5443, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: hl.111003.gq}, udp: true}
+  - {name: _FR_法国 7, server: 62.210.209.50, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: CN | 01, server: gzyd.wozcjd.xyz, port: 11359, type: ss, cipher: chacha20-ietf-poly1305, password: c753e8a8-e180-4e76-a486-c917273d718b, udp: true}
+  - {name: _CA_加拿大 4, server: 134.195.196.150, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
   - {name: CN | 10, server: hl.111003.gq, port: 11700, type: vmess, uuid: 6775cc89-3599-3985-bbae-6506532b5443, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: hl.111003.gq}, udp: true}
+  - {name: 荷兰(绿头外网集团)(Public), server: 185.126.148.23, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, skip-cert-verify: true, udp: true}
+  - {name: 愛沙尼亞(绿头外网集团)(Public), server: os2-5.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-5.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: GB-172.99.190.149-08, server: 172.99.190.149, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 法国-高速节点购买：gvip.gq（浏览器打开） 3, server: 149.202.82.172, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _FR_法国 4, server: 149.202.82.172, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 法国-高速节点购买：gvip.gq（浏览器打开） 18, server: 149.202.82.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 美国-高速节点购买：gvip.gq（浏览器打开） 23, server: 172.99.190.188, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国-高速节点购买：gvip.gq（浏览器打开） 20, server: 172.99.190.188, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: FR-149.202.82.172-45, server: 149.202.82.172, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 泰國(绿头外网集团)(Public), server: gzyd.wozcjd.xyz, port: 11348, type: ss, cipher: chacha20-ietf-poly1305, password: c753e8a8-e180-4e76-a486-c917273d718b, udp: true}
+  - {name: JP_油管 TG 8度科技, server: os2-3.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-3.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: _FR_法国 8, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: GB-172.99.190.205-06, server: 172.99.190.205, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: FR_油管 TG 8度科技, server: 51.255.66.185, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 美国-高速节点购买：gvip.gq（浏览器打开）, server: 169.197.141.91, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 法国(绿头外网集团)(Public) 3, server: 149.202.82.172, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 77机场👉魔戒.net
-      - 76机场👉魔戒.net
-      - 58机场👉魔戒.net
-      - 56机场👉魔戒.net
-      - 52机场👉魔戒.net
-      - 49机场👉魔戒.net
-      - 55机场👉魔戒.net
-      - 53机场👉魔戒.net
-      - 59机场👉魔戒.net
-      - 45机场👉魔戒.net
-      - 50机场👉魔戒.net
-      - 51机场👉魔戒.net
-      - 23机场👉魔戒.net 2
-      - 29机场👉魔戒.net 2
-      - CN | 05
-      - 26机场👉魔戒.net 2
-      - 54机场👉魔戒.net
-      - CN | 07
-      - 32机场👉魔戒.net 2
-      - CN | 06
-      - 19机场👉魔戒.net
-      - 24机场👉魔戒.net 2
-      - 27机场👉魔戒.net 2
-      - 57机场👉魔戒.net
-      - 82机场👉魔戒.net
-      - US | 18
-      - 28机场👉魔戒.net 2
-      - 30机场👉魔戒.net 2
-      - 60机场👉魔戒.net
-      - 47机场👉魔戒.net
-      - 愛沙尼亞(绿头外网集团)(Public)
       - 43机场👉魔戒.net
-      - FR_油管 TG 8度科技 2
-      - 78机场👉魔戒.net
-      - GB_油管 TG 8度科技
-      - _GB_英国 2
-      - 美国(绿头外网集团)(Public) 7
-      - _CA_加拿大 3
-      - RU_油管 TG 8度科技 2
-      - 美國(绿头外网集团)(Public)
-      - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - 英国(绿头外网集团)(Public) 5
-      - 俄罗斯千兆-02号
-      - _CA_加拿大 2
-      - _CA_加拿大 11
+      - TG频道@Jsnzk
+      - 47机场👉魔戒.net
+      - 日本(绿头外网集团)(Public)
+      - US | 17
+      - US | 16
+      - CN | 09
+      - _FR_法国 7
+      - CN | 01
+      - _CA_加拿大 4
       - CN | 10
+      - 荷兰(绿头外网集团)(Public)
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB-172.99.190.149-08
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 3
+      - _FR_法国 4
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 18
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 23
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 20
+      - FR-149.202.82.172-45
+      - 泰國(绿头外网集团)(Public)
+      - JP_油管 TG 8度科技
+      - _FR_法国 8
+      - GB-172.99.190.205-06
+      - FR_油管 TG 8度科技
+      - 美国-高速节点购买：gvip.gq（浏览器打开）
+      - 法国(绿头外网集团)(Public) 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 77机场👉魔戒.net
-      - 76机场👉魔戒.net
-      - 58机场👉魔戒.net
-      - 56机场👉魔戒.net
-      - 52机场👉魔戒.net
-      - 49机场👉魔戒.net
-      - 55机场👉魔戒.net
-      - 53机场👉魔戒.net
-      - 59机场👉魔戒.net
-      - 45机场👉魔戒.net
-      - 50机场👉魔戒.net
-      - 51机场👉魔戒.net
-      - 23机场👉魔戒.net 2
-      - 29机场👉魔戒.net 2
-      - CN | 05
-      - 26机场👉魔戒.net 2
-      - 54机场👉魔戒.net
-      - CN | 07
-      - 32机场👉魔戒.net 2
-      - CN | 06
-      - 19机场👉魔戒.net
-      - 24机场👉魔戒.net 2
-      - 27机场👉魔戒.net 2
-      - 57机场👉魔戒.net
-      - 82机场👉魔戒.net
-      - US | 18
-      - 28机场👉魔戒.net 2
-      - 30机场👉魔戒.net 2
-      - 60机场👉魔戒.net
-      - 47机场👉魔戒.net
-      - 愛沙尼亞(绿头外网集团)(Public)
       - 43机场👉魔戒.net
-      - FR_油管 TG 8度科技 2
-      - 78机场👉魔戒.net
-      - GB_油管 TG 8度科技
-      - _GB_英国 2
-      - 美国(绿头外网集团)(Public) 7
-      - _CA_加拿大 3
-      - RU_油管 TG 8度科技 2
-      - 美國(绿头外网集团)(Public)
-      - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - 英国(绿头外网集团)(Public) 5
-      - 俄罗斯千兆-02号
-      - _CA_加拿大 2
-      - _CA_加拿大 11
+      - TG频道@Jsnzk
+      - 47机场👉魔戒.net
+      - 日本(绿头外网集团)(Public)
+      - US | 17
+      - US | 16
+      - CN | 09
+      - _FR_法国 7
+      - CN | 01
+      - _CA_加拿大 4
       - CN | 10
+      - 荷兰(绿头外网集团)(Public)
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB-172.99.190.149-08
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 3
+      - _FR_法国 4
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 18
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 23
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 20
+      - FR-149.202.82.172-45
+      - 泰國(绿头外网集团)(Public)
+      - JP_油管 TG 8度科技
+      - _FR_法国 8
+      - GB-172.99.190.205-06
+      - FR_油管 TG 8度科技
+      - 美国-高速节点购买：gvip.gq（浏览器打开）
+      - 法国(绿头外网集团)(Public) 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 77机场👉魔戒.net
-      - 76机场👉魔戒.net
-      - 58机场👉魔戒.net
-      - 56机场👉魔戒.net
-      - 52机场👉魔戒.net
-      - 49机场👉魔戒.net
-      - 55机场👉魔戒.net
-      - 53机场👉魔戒.net
-      - 59机场👉魔戒.net
-      - 45机场👉魔戒.net
-      - 50机场👉魔戒.net
-      - 51机场👉魔戒.net
-      - 23机场👉魔戒.net 2
-      - 29机场👉魔戒.net 2
-      - CN | 05
-      - 26机场👉魔戒.net 2
-      - 54机场👉魔戒.net
-      - CN | 07
-      - 32机场👉魔戒.net 2
-      - CN | 06
-      - 19机场👉魔戒.net
-      - 24机场👉魔戒.net 2
-      - 27机场👉魔戒.net 2
-      - 57机场👉魔戒.net
-      - 82机场👉魔戒.net
-      - US | 18
-      - 28机场👉魔戒.net 2
-      - 30机场👉魔戒.net 2
-      - 60机场👉魔戒.net
-      - 47机场👉魔戒.net
-      - 愛沙尼亞(绿头外网集团)(Public)
       - 43机场👉魔戒.net
-      - FR_油管 TG 8度科技 2
-      - 78机场👉魔戒.net
-      - GB_油管 TG 8度科技
-      - _GB_英国 2
-      - 美国(绿头外网集团)(Public) 7
-      - _CA_加拿大 3
-      - RU_油管 TG 8度科技 2
-      - 美國(绿头外网集团)(Public)
-      - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - 英国(绿头外网集团)(Public) 5
-      - 俄罗斯千兆-02号
-      - _CA_加拿大 2
-      - _CA_加拿大 11
+      - TG频道@Jsnzk
+      - 47机场👉魔戒.net
+      - 日本(绿头外网集团)(Public)
+      - US | 17
+      - US | 16
+      - CN | 09
+      - _FR_法国 7
+      - CN | 01
+      - _CA_加拿大 4
       - CN | 10
+      - 荷兰(绿头外网集团)(Public)
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB-172.99.190.149-08
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 3
+      - _FR_法国 4
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 18
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 23
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 20
+      - FR-149.202.82.172-45
+      - 泰國(绿头外网集团)(Public)
+      - JP_油管 TG 8度科技
+      - _FR_法国 8
+      - GB-172.99.190.205-06
+      - FR_油管 TG 8度科技
+      - 美国-高速节点购买：gvip.gq（浏览器打开）
+      - 法国(绿头外网集团)(Public) 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -228,53 +148,33 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 77机场👉魔戒.net
-      - 76机场👉魔戒.net
-      - 58机场👉魔戒.net
-      - 56机场👉魔戒.net
-      - 52机场👉魔戒.net
-      - 49机场👉魔戒.net
-      - 55机场👉魔戒.net
-      - 53机场👉魔戒.net
-      - 59机场👉魔戒.net
-      - 45机场👉魔戒.net
-      - 50机场👉魔戒.net
-      - 51机场👉魔戒.net
-      - 23机场👉魔戒.net 2
-      - 29机场👉魔戒.net 2
-      - CN | 05
-      - 26机场👉魔戒.net 2
-      - 54机场👉魔戒.net
-      - CN | 07
-      - 32机场👉魔戒.net 2
-      - CN | 06
-      - 19机场👉魔戒.net
-      - 24机场👉魔戒.net 2
-      - 27机场👉魔戒.net 2
-      - 57机场👉魔戒.net
-      - 82机场👉魔戒.net
-      - US | 18
-      - 28机场👉魔戒.net 2
-      - 30机场👉魔戒.net 2
-      - 60机场👉魔戒.net
-      - 47机场👉魔戒.net
-      - 愛沙尼亞(绿头外网集团)(Public)
       - 43机场👉魔戒.net
-      - FR_油管 TG 8度科技 2
-      - 78机场👉魔戒.net
-      - GB_油管 TG 8度科技
-      - _GB_英国 2
-      - 美国(绿头外网集团)(Public) 7
-      - _CA_加拿大 3
-      - RU_油管 TG 8度科技 2
-      - 美國(绿头外网集团)(Public)
-      - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - 英国(绿头外网集团)(Public) 5
-      - 俄罗斯千兆-02号
-      - _CA_加拿大 2
-      - _CA_加拿大 11
+      - TG频道@Jsnzk
+      - 47机场👉魔戒.net
+      - 日本(绿头外网集团)(Public)
+      - US | 17
+      - US | 16
+      - CN | 09
+      - _FR_法国 7
+      - CN | 01
+      - _CA_加拿大 4
       - CN | 10
+      - 荷兰(绿头外网集团)(Public)
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB-172.99.190.149-08
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 3
+      - _FR_法国 4
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 18
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 23
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 20
+      - FR-149.202.82.172-45
+      - 泰國(绿头外网集团)(Public)
+      - JP_油管 TG 8度科技
+      - _FR_法国 8
+      - GB-172.99.190.205-06
+      - FR_油管 TG 8度科技
+      - 美国-高速节点购买：gvip.gq（浏览器打开）
+      - 法国(绿头外网集团)(Public) 3
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -285,158 +185,98 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 77机场👉魔戒.net
-      - 76机场👉魔戒.net
-      - 58机场👉魔戒.net
-      - 56机场👉魔戒.net
-      - 52机场👉魔戒.net
-      - 49机场👉魔戒.net
-      - 55机场👉魔戒.net
-      - 53机场👉魔戒.net
-      - 59机场👉魔戒.net
-      - 45机场👉魔戒.net
-      - 50机场👉魔戒.net
-      - 51机场👉魔戒.net
-      - 23机场👉魔戒.net 2
-      - 29机场👉魔戒.net 2
-      - CN | 05
-      - 26机场👉魔戒.net 2
-      - 54机场👉魔戒.net
-      - CN | 07
-      - 32机场👉魔戒.net 2
-      - CN | 06
-      - 19机场👉魔戒.net
-      - 24机场👉魔戒.net 2
-      - 27机场👉魔戒.net 2
-      - 57机场👉魔戒.net
-      - 82机场👉魔戒.net
-      - US | 18
-      - 28机场👉魔戒.net 2
-      - 30机场👉魔戒.net 2
-      - 60机场👉魔戒.net
-      - 47机场👉魔戒.net
-      - 愛沙尼亞(绿头外网集团)(Public)
       - 43机场👉魔戒.net
-      - FR_油管 TG 8度科技 2
-      - 78机场👉魔戒.net
-      - GB_油管 TG 8度科技
-      - _GB_英国 2
-      - 美国(绿头外网集团)(Public) 7
-      - _CA_加拿大 3
-      - RU_油管 TG 8度科技 2
-      - 美國(绿头外网集团)(Public)
-      - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - 英国(绿头外网集团)(Public) 5
-      - 俄罗斯千兆-02号
-      - _CA_加拿大 2
-      - _CA_加拿大 11
+      - TG频道@Jsnzk
+      - 47机场👉魔戒.net
+      - 日本(绿头外网集团)(Public)
+      - US | 17
+      - US | 16
+      - CN | 09
+      - _FR_法国 7
+      - CN | 01
+      - _CA_加拿大 4
       - CN | 10
+      - 荷兰(绿头外网集团)(Public)
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB-172.99.190.149-08
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 3
+      - _FR_法国 4
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 18
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 23
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 20
+      - FR-149.202.82.172-45
+      - 泰國(绿头外网集团)(Public)
+      - JP_油管 TG 8度科技
+      - _FR_法国 8
+      - GB-172.99.190.205-06
+      - FR_油管 TG 8度科技
+      - 美国-高速节点购买：gvip.gq（浏览器打开）
+      - 法国(绿头外网集团)(Public) 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 77机场👉魔戒.net
-      - 76机场👉魔戒.net
-      - 58机场👉魔戒.net
-      - 56机场👉魔戒.net
-      - 52机场👉魔戒.net
-      - 49机场👉魔戒.net
-      - 55机场👉魔戒.net
-      - 53机场👉魔戒.net
-      - 59机场👉魔戒.net
-      - 45机场👉魔戒.net
-      - 50机场👉魔戒.net
-      - 51机场👉魔戒.net
-      - 23机场👉魔戒.net 2
-      - 29机场👉魔戒.net 2
-      - CN | 05
-      - 26机场👉魔戒.net 2
-      - 54机场👉魔戒.net
-      - CN | 07
-      - 32机场👉魔戒.net 2
-      - CN | 06
-      - 19机场👉魔戒.net
-      - 24机场👉魔戒.net 2
-      - 27机场👉魔戒.net 2
-      - 57机场👉魔戒.net
-      - 82机场👉魔戒.net
-      - US | 18
-      - 28机场👉魔戒.net 2
-      - 30机场👉魔戒.net 2
-      - 60机场👉魔戒.net
-      - 47机场👉魔戒.net
-      - 愛沙尼亞(绿头外网集团)(Public)
       - 43机场👉魔戒.net
-      - FR_油管 TG 8度科技 2
-      - 78机场👉魔戒.net
-      - GB_油管 TG 8度科技
-      - _GB_英国 2
-      - 美国(绿头外网集团)(Public) 7
-      - _CA_加拿大 3
-      - RU_油管 TG 8度科技 2
-      - 美國(绿头外网集团)(Public)
-      - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - 英国(绿头外网集团)(Public) 5
-      - 俄罗斯千兆-02号
-      - _CA_加拿大 2
-      - _CA_加拿大 11
+      - TG频道@Jsnzk
+      - 47机场👉魔戒.net
+      - 日本(绿头外网集团)(Public)
+      - US | 17
+      - US | 16
+      - CN | 09
+      - _FR_法国 7
+      - CN | 01
+      - _CA_加拿大 4
       - CN | 10
+      - 荷兰(绿头外网集团)(Public)
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB-172.99.190.149-08
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 3
+      - _FR_法国 4
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 18
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 23
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 20
+      - FR-149.202.82.172-45
+      - 泰國(绿头外网集团)(Public)
+      - JP_油管 TG 8度科技
+      - _FR_法国 8
+      - GB-172.99.190.205-06
+      - FR_油管 TG 8度科技
+      - 美国-高速节点购买：gvip.gq（浏览器打开）
+      - 法国(绿头外网集团)(Public) 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 77机场👉魔戒.net
-      - 76机场👉魔戒.net
-      - 58机场👉魔戒.net
-      - 56机场👉魔戒.net
-      - 52机场👉魔戒.net
-      - 49机场👉魔戒.net
-      - 55机场👉魔戒.net
-      - 53机场👉魔戒.net
-      - 59机场👉魔戒.net
-      - 45机场👉魔戒.net
-      - 50机场👉魔戒.net
-      - 51机场👉魔戒.net
-      - 23机场👉魔戒.net 2
-      - 29机场👉魔戒.net 2
-      - CN | 05
-      - 26机场👉魔戒.net 2
-      - 54机场👉魔戒.net
-      - CN | 07
-      - 32机场👉魔戒.net 2
-      - CN | 06
-      - 19机场👉魔戒.net
-      - 24机场👉魔戒.net 2
-      - 27机场👉魔戒.net 2
-      - 57机场👉魔戒.net
-      - 82机场👉魔戒.net
-      - US | 18
-      - 28机场👉魔戒.net 2
-      - 30机场👉魔戒.net 2
-      - 60机场👉魔戒.net
-      - 47机场👉魔戒.net
-      - 愛沙尼亞(绿头外网集团)(Public)
       - 43机场👉魔戒.net
-      - FR_油管 TG 8度科技 2
-      - 78机场👉魔戒.net
-      - GB_油管 TG 8度科技
-      - _GB_英国 2
-      - 美国(绿头外网集团)(Public) 7
-      - _CA_加拿大 3
-      - RU_油管 TG 8度科技 2
-      - 美國(绿头外网集团)(Public)
-      - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - 英国(绿头外网集团)(Public) 5
-      - 俄罗斯千兆-02号
-      - _CA_加拿大 2
-      - _CA_加拿大 11
+      - TG频道@Jsnzk
+      - 47机场👉魔戒.net
+      - 日本(绿头外网集团)(Public)
+      - US | 17
+      - US | 16
+      - CN | 09
+      - _FR_法国 7
+      - CN | 01
+      - _CA_加拿大 4
       - CN | 10
+      - 荷兰(绿头外网集团)(Public)
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB-172.99.190.149-08
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 3
+      - _FR_法国 4
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 18
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 23
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 20
+      - FR-149.202.82.172-45
+      - 泰國(绿头外网集团)(Public)
+      - JP_油管 TG 8度科技
+      - _FR_法国 8
+      - GB-172.99.190.205-06
+      - FR_油管 TG 8度科技
+      - 美国-高速节点购买：gvip.gq（浏览器打开）
+      - 法国(绿头外网集团)(Public) 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -452,53 +292,33 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 77机场👉魔戒.net
-      - 76机场👉魔戒.net
-      - 58机场👉魔戒.net
-      - 56机场👉魔戒.net
-      - 52机场👉魔戒.net
-      - 49机场👉魔戒.net
-      - 55机场👉魔戒.net
-      - 53机场👉魔戒.net
-      - 59机场👉魔戒.net
-      - 45机场👉魔戒.net
-      - 50机场👉魔戒.net
-      - 51机场👉魔戒.net
-      - 23机场👉魔戒.net 2
-      - 29机场👉魔戒.net 2
-      - CN | 05
-      - 26机场👉魔戒.net 2
-      - 54机场👉魔戒.net
-      - CN | 07
-      - 32机场👉魔戒.net 2
-      - CN | 06
-      - 19机场👉魔戒.net
-      - 24机场👉魔戒.net 2
-      - 27机场👉魔戒.net 2
-      - 57机场👉魔戒.net
-      - 82机场👉魔戒.net
-      - US | 18
-      - 28机场👉魔戒.net 2
-      - 30机场👉魔戒.net 2
-      - 60机场👉魔戒.net
-      - 47机场👉魔戒.net
-      - 愛沙尼亞(绿头外网集团)(Public)
       - 43机场👉魔戒.net
-      - FR_油管 TG 8度科技 2
-      - 78机场👉魔戒.net
-      - GB_油管 TG 8度科技
-      - _GB_英国 2
-      - 美国(绿头外网集团)(Public) 7
-      - _CA_加拿大 3
-      - RU_油管 TG 8度科技 2
-      - 美國(绿头外网集团)(Public)
-      - _CA_加拿大 7
-      - CA_油管 TG 8度科技 3
-      - 英国(绿头外网集团)(Public) 5
-      - 俄罗斯千兆-02号
-      - _CA_加拿大 2
-      - _CA_加拿大 11
+      - TG频道@Jsnzk
+      - 47机场👉魔戒.net
+      - 日本(绿头外网集团)(Public)
+      - US | 17
+      - US | 16
+      - CN | 09
+      - _FR_法国 7
+      - CN | 01
+      - _CA_加拿大 4
       - CN | 10
+      - 荷兰(绿头外网集团)(Public)
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - GB-172.99.190.149-08
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 3
+      - _FR_法国 4
+      - 法国-高速节点购买：gvip.gq（浏览器打开） 18
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 23
+      - 美国-高速节点购买：gvip.gq（浏览器打开） 20
+      - FR-149.202.82.172-45
+      - 泰國(绿头外网集团)(Public)
+      - JP_油管 TG 8度科技
+      - _FR_法国 8
+      - GB-172.99.190.205-06
+      - FR_油管 TG 8度科技
+      - 美国-高速节点购买：gvip.gq（浏览器打开）
+      - 法国(绿头外网集团)(Public) 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
