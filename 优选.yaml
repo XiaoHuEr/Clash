@@ -5,547 +5,211 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 台灣(绿头外网集团)(Public), server: china-zj-hz-1.forwardserver.xyz, port: 37313, type: trojan, password: f6554cbe-1852-48df-ae9f-25ed4f42d94e, sni: china-zj-hz-1.forwardserver.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN | 95, server: china-zj-hz-1.forwardserver.xyz, port: 43841, type: trojan, password: f6554cbe-1852-48df-ae9f-25ed4f42d94e, sni: china-zj-hz-1.forwardserver.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN | 68, server: gy.wozcjd.xyz, port: 11352, type: ss, cipher: chacha20-ietf-poly1305, password: c753e8a8-e180-4e76-a486-c917273d718b, udp: true}
-  - {name: "| 42", server: in05.dns2333.xyz, port: 63051, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /hls, ws-headers: {Host: mugua-in01.airport-v2.com}, udp: true}
-  - {name: CN | 84, server: in04.dns2333.xyz, port: 64086, type: vmess, uuid: 606d5625-57af-3f68-8949-4ac4c372b4a0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /biteb, ws-headers: {Host: in04.dns2333.xyz}, udp: true}
-  - {name: EG | 106, server: 185.217.111.132, port: 32110, type: trojan, password: OFXHnebQEK, skip-cert-verify: true, udp: true}
-  - {name: 香港(绿头外网集团)(Public) 2, server: hkcn2.doubledou.win, port: 4588, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: hkcn2.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: "| 53", server: in05.dns2333.xyz, port: 63014, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
-  - {name: US | 301, server: 45.9.10.103, port: 443, type: trojan, password: WpfQAbO2wg, skip-cert-verify: true, udp: true}
-  - {name: EE | 104, server: os2-3.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-3.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美國(绿头外网集团)(Public) 4, server: v2losdmit1.doubledou.win, port: 6674, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: v2losdmit1.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: "| 30", server: in05.dns2333.xyz, port: 63004, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-kr01.covid19.rip}, udp: true}
-  - {name: EE | 140, server: os2-5.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-5.sstr-api.xyz, skip-cert-verify: true, udp: true}
-  - {name: 美國(绿头外网集团)(Public) 3, server: uj.doubledou.win, port: 4586, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: uj.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: "| 59", server: in05.dns2333.xyz, port: 63069, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-us03.covid19.rip}, udp: true}
-  - {name: 日本(绿头外网集团)(Public) 4, server: jp10.holiganfan.com, port: 10088, type: trojan, password: 8ce38f17-b2be-453a-8d25-deec1a0aabba, sni: jp10.holiganfan.com, skip-cert-verify: true, udp: true}
-  - {name: US | 297, server: fd.speedcar88.com, port: 61268, type: vmess, uuid: 52b6103f-7b2a-4114-81bc-e325e46f494d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: fd.speedcar88.com}, udp: true}
-  - {name: "| 43", server: in05.dns2333.xyz, port: 63088, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
-  - {name: CA | 46, server: t3.ssrsub.com, port: 8443, type: trojan, password: 739e53db-d41c-4bad-a61d-6cd5a173f85b, sni: t3.ssrsub.com, skip-cert-verify: true, udp: true}
-  - {name: "| 60", server: in04.dns2333.xyz, port: 63069, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-us03.covid19.rip}, udp: true}
-  - {name: US | 293, server: v8.ssrsub.com, port: 443, type: vmess, uuid: b2015918-4a70-4250-8afa-dba8a5be97f4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
-  - {name: CA | 47, server: t3.ssrsub.com, port: 8443, type: trojan, password: b2015918-4a70-4250-8afa-dba8a5be97f4, sni: t3.ssrsub.com, skip-cert-verify: true, udp: true}
-  - {name: 美國(绿头外网集团)(Public), server: cuvip.doubledou.win, port: 4583, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: cuvip.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: 美國(绿头外网集团)(Public) 5, server: ceraus.doubledou.win, port: 4586, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: ceraus.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: CN | 125, server: in04.dns2333.xyz, port: 64071, type: vmess, uuid: 606d5625-57af-3f68-8949-4ac4c372b4a0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: in04.dns2333.xyz}, udp: true}
-  - {name: 美國(绿头外网集团)(Public) 2, server: cera.doubledou.win, port: 4586, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: cera.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: "| 28", server: in04.dns2333.xyz, port: 63014, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
-  - {name: US | 296, server: v8.ssrsub.com, port: 443, type: vmess, uuid: 739e53db-d41c-4bad-a61d-6cd5a173f85b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ssrsub, ws-headers: {Host: v8.ssrsub.com}, udp: true}
-  - {name: "| 15", server: in04.dns2333.xyz, port: 63086, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: 新加坡(绿头外网集团)(Public) 3, server: azhk.relay.qchwnd.moe, port: 10217, type: trojan, password: b5b0aa8d-595c-4739-8fa0-659cff1c49bb, sni: azhk.relay.qchwnd.moe, skip-cert-verify: true, udp: true}
-  - {name: 韓國(绿头外网集团)(Public) 2, server: cc2.doubledou.win, port: 4584, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: cc2.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: CN | 79, server: in04.dns2333.xyz, port: 64014, type: vmess, uuid: 606d5625-57af-3f68-8949-4ac4c372b4a0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /biteb, ws-headers: {Host: in04.dns2333.xyz}, udp: true}
-  - {name: EG | 105, server: 185.217.110.195, port: 51390, type: trojan, password: xbTvw1dpLn, skip-cert-verify: true, udp: true}
-  - {name: DE | 100, server: 217.79.184.107, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ | 354, server: 134.195.196.147, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦加拿大(绿头外网集团)(Public) 5, server: 134.195.196.221, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: FR | 113, server: 149.202.82.172, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ZZ | 355, server: 134.195.196.147, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ | 388, server: 134.195.196.147, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: "| 36", server: in05.dns2333.xyz, port: 63071, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-ru01.myn1des.com}, udp: true}
-  - {name: US | 219, server: 172.99.190.205, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: FR | 119, server: 149.202.82.172, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 香港(绿头外网集团)(Public) 3, server: azzz.doubledou.win, port: 50009, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: azzz.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: 美國(绿头外网集团)(Public) 11, server: 173.255.225.7, port: 11416, type: trojan, password: f6554cbe-1852-48df-ae9f-25ed4f42d94e, skip-cert-verify: true, udp: true}
-  - {name: ‌‌🇨🇦加拿大(绿头外网集团)(Public) 12, server: 134.195.196.221, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ | 376, server: 134.195.196.147, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦加拿大(绿头外网集团)(Public) 7, server: 134.195.196.221, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美國(绿头外网集团)(Public) 12, server: loslite.doubledou.win, port: 6529, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: loslite.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: ZZ | 348, server: 134.195.196.147, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: FR | 128, server: 149.202.82.172, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ | 345, server: 134.195.196.221, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ‌‌🇨🇦加拿大(绿头外网集团)(Public) 11, server: 134.195.196.221, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: FR | 129, server: 149.202.82.172, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ZZ | 347, server: 134.195.196.221, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: ‌‌🇨🇦加拿大(绿头外网集团)(Public) 6, server: 134.195.196.221, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ‌‌🇨🇦加拿大(绿头外网集团)(Public) 15, server: 134.195.196.221, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: FR | 110, server: 149.202.82.172, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ | 379, server: 134.195.196.147, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ | 382, server: 134.195.196.147, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US | 206, server: 172.99.190.205, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ | 338, server: 134.195.196.147, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ‌‌🇨🇦加拿大(绿头外网集团)(Public) 8, server: 134.195.196.221, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US | 207, server: 172.99.190.205, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: ZZ | 340, server: 134.195.196.221, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ | 357, server: 134.195.196.200, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ | 344, server: 134.195.196.221, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ | 366, server: 134.195.196.147, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US | 217, server: 172.99.190.205, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: "| 22", server: in05.dns2333.xyz, port: 63086, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: jp-balancer.myn1des.com}, udp: true}
-  - {name: FR | 121, server: 149.202.82.172, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ZZ | 350, server: 134.195.196.147, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: DE | 99, server: 217.79.184.107, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: FR | 126, server: 149.202.82.172, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: FR | 130, server: 149.202.82.172, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: AU | 35, server: 185.218.6.227, port: 443, type: trojan, password: vIl4ReBJj7, skip-cert-verify: true, udp: true}
-  - {name: ZZ | 339, server: 134.195.196.221, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: US | 256, server: 172.99.190.205, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ | 377, server: 134.195.196.147, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: FR | 107, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ | 372, server: 134.195.196.147, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ZZ | 384, server: 134.195.196.147, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: ZZ | 374, server: 134.195.196.147, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: DE | 101, server: 217.79.184.107, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ‌‌🇨🇦加拿大(绿头外网集团)(Public) 14, server: 134.195.196.221, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: DE | 98, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
-  - {name: FR | 125, server: 51.255.66.185, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: ZZ | 352, server: 134.195.196.193, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US | 211, server: 172.99.190.205, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US | 238, server: 172.99.190.188, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 印度(绿头外网集团)(Public), server: india.doubledou.win, port: 44435, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: india.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: FR | 127, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US | 253, server: 172.99.190.188, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: ZZ | 359, server: 134.195.196.147, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US | 210, server: 172.99.190.205, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ | 349, server: 134.195.196.147, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: ZZ | 381, server: 134.195.196.147, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: CN | 74, server: in01.dns2333.xyz, port: 64014, type: vmess, uuid: 606d5625-57af-3f68-8949-4ac4c372b4a0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /biteb, ws-headers: {Host: in01.dns2333.xyz}, udp: true}
-  - {name: FR | 111, server: 149.202.82.172, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US | 227, server: 172.99.190.205, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ | 378, server: 134.195.196.147, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 香港(绿头外网集团)(Public) 4, server: trohkt.doubledou.win, port: 4588, type: trojan, password: 3c91d857-2d40-39b9-81c0-f6adde8037ff, sni: trohkt.doubledou.win, skip-cert-verify: true, udp: true}
-  - {name: CN | 116, server: in01.dns2333.xyz, port: 64088, type: vmess, uuid: 606d5625-57af-3f68-8949-4ac4c372b4a0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /biteb, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
-  - {name: ZZ | 342, server: 134.195.196.221, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ | 373, server: 134.195.196.147, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: CN | 80, server: in01.dns2333.xyz, port: 64071, type: vmess, uuid: 606d5625-57af-3f68-8949-4ac4c372b4a0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: in01.dns2333.xyz}, udp: true}
-  - {name: US | 189, server: 172.99.190.205, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ZZ | 333, server: 134.195.196.147, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: ZZ | 332, server: 134.195.196.200, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: FR | 122, server: 149.202.82.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: FR | 133, server: 149.202.82.172, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US | 225, server: 172.99.190.188, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: ZZ | 335, server: 134.195.196.147, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: FR | 108, server: 149.202.82.172, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: FR | 116, server: 149.202.82.172, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: FR | 124, server: 149.202.82.172, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: ZZ | 321, server: 134.195.196.193, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ | 305, server: 134.195.196.193, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ZZ | 361, server: 134.195.196.200, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US | 233, server: 172.99.190.188, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ | 314, server: 134.195.196.193, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: ZZ | 363, server: 134.195.196.147, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: FR | 120, server: 149.202.82.172, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US | 248, server: 172.99.190.188, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: "| 03", server: in01.dns2333.xyz, port: 63088, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mugua, ws-headers: {Host: cdn.bootcdn.net}, udp: true}
-  - {name: ZZ | 360, server: 134.195.196.200, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: "| 19", server: in01.dns2333.xyz, port: 63014, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /mg, ws-headers: {Host: mugua-us01.covid19.rip}, udp: true}
-  - {name: US | 204, server: 172.99.190.188, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: ZZ | 375, server: 134.195.196.147, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: ZZ | 306, server: 134.195.196.193, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: "| 54", server: in01.dns2333.xyz, port: 63069, type: vmess, uuid: f7618d80-3436-3c4c-9c34-816e643067e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: mugua-us03.covid19.rip}, udp: true}
-  - {name: ZZ | 323, server: 134.195.196.193, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 77机场👉魔戒.net, server: sg04.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 76机场👉魔戒.net, server: gdgz.marslink.icu, port: 41109, type: ss, cipher: chacha20-ietf-poly1305, password: 7704a266-a631-41d4-9f73-37f3f7784081, udp: true}
+  - {name: 58机场👉魔戒.net, server: hkt05.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 56机场👉魔戒.net, server: hk05.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 52机场👉魔戒.net, server: sg05.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 49机场👉魔戒.net, server: ir02.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 55机场👉魔戒.net, server: hkt03.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 53机场👉魔戒.net, server: sg06.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 59机场👉魔戒.net, server: hkt02.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 45机场👉魔戒.net, server: jpoo.77710086.xyz, port: 888, type: trojan, password: 887b9ece-45e8-45a1-844c-6991e2b086a8, sni: jpoo.77710086.xyz, skip-cert-verify: true, udp: true}
+  - {name: 50机场👉魔戒.net, server: pvcc01.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 51机场👉魔戒.net, server: ir01.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 23机场👉魔戒.net 2, server: sg08.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 29机场👉魔戒.net 2, server: jp05.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: CN | 05, server: gzyd.wozcjd.xyz, port: 11348, type: ss, cipher: chacha20-ietf-poly1305, password: c753e8a8-e180-4e76-a486-c917273d718b, udp: true}
+  - {name: 26机场👉魔戒.net 2, server: hkt01.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 54机场👉魔戒.net, server: sg11.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: CN | 07, server: hl.111003.gq, port: 11701, type: vmess, uuid: 6775cc89-3599-3985-bbae-6506532b5443, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: hl.111003.gq}, udp: true}
+  - {name: 32机场👉魔戒.net 2, server: tw15.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: CN | 06, server: hl.111003.gq, port: 11810, type: vmess, uuid: 6775cc89-3599-3985-bbae-6506532b5443, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: hl.111003.gq}, udp: true}
+  - {name: 19机场👉魔戒.net, server: tw13.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 24机场👉魔戒.net 2, server: sg10.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 27机场👉魔戒.net 2, server: hr04.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 57机场👉魔戒.net, server: sg07.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 82机场👉魔戒.net, server: kl.pbaplink.xyz, port: 48511, type: trojan, password: a6525e92-f057-4c25-a446-e6fdbec87177, sni: kl.pbaplink.xyz, skip-cert-verify: true, udp: true}
+  - {name: US | 18, server: uscu6.lixiaolong.buzz, port: 1994, type: vmess, uuid: 6775cc89-3599-3985-bbae-6506532b5443, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: uscu6.lixiaolong.buzz}, udp: true}
+  - {name: 28机场👉魔戒.net 2, server: hr05.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 30机场👉魔戒.net 2, server: jp09.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 60机场👉魔戒.net, server: hkt07.clashcloud.tech, port: 9010, type: ss, cipher: rc4-md5, password: t8L2td, udp: true}
+  - {name: 47机场👉魔戒.net, server: tghg.77710086.xyz, port: 888, type: trojan, password: 887b9ece-45e8-45a1-844c-6991e2b086a8, sni: tghg.77710086.xyz, skip-cert-verify: true, udp: true}
+  - {name: 愛沙尼亞(绿头外网集团)(Public), server: os2-5.sstr-api.xyz, port: 443, type: trojan, password: MhPG7g9x2Etb4Hspsb, sni: os2-5.sstr-api.xyz, skip-cert-verify: true, udp: true}
+  - {name: 43机场👉魔戒.net, server: tghk2.77710086.xyz, port: 888, type: trojan, password: 887b9ece-45e8-45a1-844c-6991e2b086a8, sni: tghk2.77710086.xyz, skip-cert-verify: true, udp: true}
+  - {name: FR_油管 TG 8度科技 2, server: 92.243.24.68, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: bIS3QQFwFIm1, udp: true}
+  - {name: 78机场👉魔戒.net, server: 104.208.80.56, port: 8080, type: vmess, uuid: 2c875731-0df7-4e51-842f-b9efca25abc8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: shoutingtoutiao3.10010.com}, udp: true}
+  - {name: GB_油管 TG 8度科技, server: 172.99.190.188, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _GB_英国 2, server: 172.99.190.205, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 美国(绿头外网集团)(Public) 7, server: 172.99.190.205, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大 3, server: 134.195.196.147, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: RU_油管 TG 8度科技 2, server: 92.223.65.119, port: 443, type: vmess, uuid: 3fd6713f-e036-4ba9-938a-da7843a17a15, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
+  - {name: 美國(绿头外网集团)(Public), server: 172.99.190.205, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _CA_加拿大 7, server: 134.195.196.147, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: CA_油管 TG 8度科技 3, server: 134.195.196.147, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 英国(绿头外网集团)(Public) 5, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 俄罗斯千兆-02号, server: 92.223.72.42, port: 443, type: vmess, uuid: ae08412f-5bb9-4be7-8560-1984976a1097, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ray, ws-headers: {Host: govacaxixo.watchdoctor.xyz}, udp: true}
+  - {name: _CA_加拿大 2, server: 134.195.196.147, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _CA_加拿大 11, server: 134.195.196.147, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: CN | 10, server: hl.111003.gq, port: 11700, type: vmess, uuid: 6775cc89-3599-3985-bbae-6506532b5443, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: hl.111003.gq}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台灣(绿头外网集团)(Public)
-      - CN | 95
-      - CN | 68
-      - "| 42"
-      - CN | 84
-      - EG | 106
-      - 香港(绿头外网集团)(Public) 2
-      - "| 53"
-      - US | 301
-      - EE | 104
-      - 美國(绿头外网集团)(Public) 4
-      - "| 30"
-      - EE | 140
-      - 美國(绿头外网集团)(Public) 3
-      - "| 59"
-      - 日本(绿头外网集团)(Public) 4
-      - US | 297
-      - "| 43"
-      - CA | 46
-      - "| 60"
-      - US | 293
-      - CA | 47
+      - 77机场👉魔戒.net
+      - 76机场👉魔戒.net
+      - 58机场👉魔戒.net
+      - 56机场👉魔戒.net
+      - 52机场👉魔戒.net
+      - 49机场👉魔戒.net
+      - 55机场👉魔戒.net
+      - 53机场👉魔戒.net
+      - 59机场👉魔戒.net
+      - 45机场👉魔戒.net
+      - 50机场👉魔戒.net
+      - 51机场👉魔戒.net
+      - 23机场👉魔戒.net 2
+      - 29机场👉魔戒.net 2
+      - CN | 05
+      - 26机场👉魔戒.net 2
+      - 54机场👉魔戒.net
+      - CN | 07
+      - 32机场👉魔戒.net 2
+      - CN | 06
+      - 19机场👉魔戒.net
+      - 24机场👉魔戒.net 2
+      - 27机场👉魔戒.net 2
+      - 57机场👉魔戒.net
+      - 82机场👉魔戒.net
+      - US | 18
+      - 28机场👉魔戒.net 2
+      - 30机场👉魔戒.net 2
+      - 60机场👉魔戒.net
+      - 47机场👉魔戒.net
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - 43机场👉魔戒.net
+      - FR_油管 TG 8度科技 2
+      - 78机场👉魔戒.net
+      - GB_油管 TG 8度科技
+      - _GB_英国 2
+      - 美国(绿头外网集团)(Public) 7
+      - _CA_加拿大 3
+      - RU_油管 TG 8度科技 2
       - 美國(绿头外网集团)(Public)
-      - 美國(绿头外网集团)(Public) 5
-      - CN | 125
-      - 美國(绿头外网集团)(Public) 2
-      - "| 28"
-      - US | 296
-      - "| 15"
-      - 新加坡(绿头外网集团)(Public) 3
-      - 韓國(绿头外网集团)(Public) 2
-      - CN | 79
-      - EG | 105
-      - DE | 100
-      - ZZ | 354
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 5
-      - FR | 113
-      - ZZ | 355
-      - ZZ | 388
-      - "| 36"
-      - US | 219
-      - FR | 119
-      - 香港(绿头外网集团)(Public) 3
-      - 美國(绿头外网集团)(Public) 11
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 12
-      - ZZ | 376
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 7
-      - 美國(绿头外网集团)(Public) 12
-      - ZZ | 348
-      - FR | 128
-      - ZZ | 345
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 11
-      - FR | 129
-      - ZZ | 347
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 6
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 15
-      - FR | 110
-      - ZZ | 379
-      - ZZ | 382
-      - US | 206
-      - ZZ | 338
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 8
-      - US | 207
-      - ZZ | 340
-      - ZZ | 357
-      - ZZ | 344
-      - ZZ | 366
-      - US | 217
-      - "| 22"
-      - FR | 121
-      - ZZ | 350
-      - DE | 99
-      - FR | 126
-      - FR | 130
-      - AU | 35
-      - ZZ | 339
-      - US | 256
-      - ZZ | 377
-      - FR | 107
-      - ZZ | 372
-      - ZZ | 384
-      - ZZ | 374
-      - DE | 101
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 14
-      - DE | 98
-      - FR | 125
-      - ZZ | 352
-      - US | 211
-      - US | 238
-      - 印度(绿头外网集团)(Public)
-      - FR | 127
-      - US | 253
-      - ZZ | 359
-      - US | 210
-      - ZZ | 349
-      - ZZ | 381
-      - CN | 74
-      - FR | 111
-      - US | 227
-      - ZZ | 378
-      - 香港(绿头外网集团)(Public) 4
-      - CN | 116
-      - ZZ | 342
-      - ZZ | 373
-      - CN | 80
-      - US | 189
-      - ZZ | 333
-      - ZZ | 332
-      - FR | 122
-      - FR | 133
-      - US | 225
-      - ZZ | 335
-      - FR | 108
-      - FR | 116
-      - FR | 124
-      - ZZ | 321
-      - ZZ | 305
-      - ZZ | 361
-      - US | 233
-      - ZZ | 314
-      - ZZ | 363
-      - FR | 120
-      - US | 248
-      - "| 03"
-      - ZZ | 360
-      - "| 19"
-      - US | 204
-      - ZZ | 375
-      - ZZ | 306
-      - "| 54"
-      - ZZ | 323
+      - _CA_加拿大 7
+      - CA_油管 TG 8度科技 3
+      - 英国(绿头外网集团)(Public) 5
+      - 俄罗斯千兆-02号
+      - _CA_加拿大 2
+      - _CA_加拿大 11
+      - CN | 10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 台灣(绿头外网集团)(Public)
-      - CN | 95
-      - CN | 68
-      - "| 42"
-      - CN | 84
-      - EG | 106
-      - 香港(绿头外网集团)(Public) 2
-      - "| 53"
-      - US | 301
-      - EE | 104
-      - 美國(绿头外网集团)(Public) 4
-      - "| 30"
-      - EE | 140
-      - 美國(绿头外网集团)(Public) 3
-      - "| 59"
-      - 日本(绿头外网集团)(Public) 4
-      - US | 297
-      - "| 43"
-      - CA | 46
-      - "| 60"
-      - US | 293
-      - CA | 47
+      - 77机场👉魔戒.net
+      - 76机场👉魔戒.net
+      - 58机场👉魔戒.net
+      - 56机场👉魔戒.net
+      - 52机场👉魔戒.net
+      - 49机场👉魔戒.net
+      - 55机场👉魔戒.net
+      - 53机场👉魔戒.net
+      - 59机场👉魔戒.net
+      - 45机场👉魔戒.net
+      - 50机场👉魔戒.net
+      - 51机场👉魔戒.net
+      - 23机场👉魔戒.net 2
+      - 29机场👉魔戒.net 2
+      - CN | 05
+      - 26机场👉魔戒.net 2
+      - 54机场👉魔戒.net
+      - CN | 07
+      - 32机场👉魔戒.net 2
+      - CN | 06
+      - 19机场👉魔戒.net
+      - 24机场👉魔戒.net 2
+      - 27机场👉魔戒.net 2
+      - 57机场👉魔戒.net
+      - 82机场👉魔戒.net
+      - US | 18
+      - 28机场👉魔戒.net 2
+      - 30机场👉魔戒.net 2
+      - 60机场👉魔戒.net
+      - 47机场👉魔戒.net
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - 43机场👉魔戒.net
+      - FR_油管 TG 8度科技 2
+      - 78机场👉魔戒.net
+      - GB_油管 TG 8度科技
+      - _GB_英国 2
+      - 美国(绿头外网集团)(Public) 7
+      - _CA_加拿大 3
+      - RU_油管 TG 8度科技 2
       - 美國(绿头外网集团)(Public)
-      - 美國(绿头外网集团)(Public) 5
-      - CN | 125
-      - 美國(绿头外网集团)(Public) 2
-      - "| 28"
-      - US | 296
-      - "| 15"
-      - 新加坡(绿头外网集团)(Public) 3
-      - 韓國(绿头外网集团)(Public) 2
-      - CN | 79
-      - EG | 105
-      - DE | 100
-      - ZZ | 354
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 5
-      - FR | 113
-      - ZZ | 355
-      - ZZ | 388
-      - "| 36"
-      - US | 219
-      - FR | 119
-      - 香港(绿头外网集团)(Public) 3
-      - 美國(绿头外网集团)(Public) 11
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 12
-      - ZZ | 376
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 7
-      - 美國(绿头外网集团)(Public) 12
-      - ZZ | 348
-      - FR | 128
-      - ZZ | 345
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 11
-      - FR | 129
-      - ZZ | 347
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 6
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 15
-      - FR | 110
-      - ZZ | 379
-      - ZZ | 382
-      - US | 206
-      - ZZ | 338
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 8
-      - US | 207
-      - ZZ | 340
-      - ZZ | 357
-      - ZZ | 344
-      - ZZ | 366
-      - US | 217
-      - "| 22"
-      - FR | 121
-      - ZZ | 350
-      - DE | 99
-      - FR | 126
-      - FR | 130
-      - AU | 35
-      - ZZ | 339
-      - US | 256
-      - ZZ | 377
-      - FR | 107
-      - ZZ | 372
-      - ZZ | 384
-      - ZZ | 374
-      - DE | 101
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 14
-      - DE | 98
-      - FR | 125
-      - ZZ | 352
-      - US | 211
-      - US | 238
-      - 印度(绿头外网集团)(Public)
-      - FR | 127
-      - US | 253
-      - ZZ | 359
-      - US | 210
-      - ZZ | 349
-      - ZZ | 381
-      - CN | 74
-      - FR | 111
-      - US | 227
-      - ZZ | 378
-      - 香港(绿头外网集团)(Public) 4
-      - CN | 116
-      - ZZ | 342
-      - ZZ | 373
-      - CN | 80
-      - US | 189
-      - ZZ | 333
-      - ZZ | 332
-      - FR | 122
-      - FR | 133
-      - US | 225
-      - ZZ | 335
-      - FR | 108
-      - FR | 116
-      - FR | 124
-      - ZZ | 321
-      - ZZ | 305
-      - ZZ | 361
-      - US | 233
-      - ZZ | 314
-      - ZZ | 363
-      - FR | 120
-      - US | 248
-      - "| 03"
-      - ZZ | 360
-      - "| 19"
-      - US | 204
-      - ZZ | 375
-      - ZZ | 306
-      - "| 54"
-      - ZZ | 323
+      - _CA_加拿大 7
+      - CA_油管 TG 8度科技 3
+      - 英国(绿头外网集团)(Public) 5
+      - 俄罗斯千兆-02号
+      - _CA_加拿大 2
+      - _CA_加拿大 11
+      - CN | 10
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台灣(绿头外网集团)(Public)
-      - CN | 95
-      - CN | 68
-      - "| 42"
-      - CN | 84
-      - EG | 106
-      - 香港(绿头外网集团)(Public) 2
-      - "| 53"
-      - US | 301
-      - EE | 104
-      - 美國(绿头外网集团)(Public) 4
-      - "| 30"
-      - EE | 140
-      - 美國(绿头外网集团)(Public) 3
-      - "| 59"
-      - 日本(绿头外网集团)(Public) 4
-      - US | 297
-      - "| 43"
-      - CA | 46
-      - "| 60"
-      - US | 293
-      - CA | 47
+      - 77机场👉魔戒.net
+      - 76机场👉魔戒.net
+      - 58机场👉魔戒.net
+      - 56机场👉魔戒.net
+      - 52机场👉魔戒.net
+      - 49机场👉魔戒.net
+      - 55机场👉魔戒.net
+      - 53机场👉魔戒.net
+      - 59机场👉魔戒.net
+      - 45机场👉魔戒.net
+      - 50机场👉魔戒.net
+      - 51机场👉魔戒.net
+      - 23机场👉魔戒.net 2
+      - 29机场👉魔戒.net 2
+      - CN | 05
+      - 26机场👉魔戒.net 2
+      - 54机场👉魔戒.net
+      - CN | 07
+      - 32机场👉魔戒.net 2
+      - CN | 06
+      - 19机场👉魔戒.net
+      - 24机场👉魔戒.net 2
+      - 27机场👉魔戒.net 2
+      - 57机场👉魔戒.net
+      - 82机场👉魔戒.net
+      - US | 18
+      - 28机场👉魔戒.net 2
+      - 30机场👉魔戒.net 2
+      - 60机场👉魔戒.net
+      - 47机场👉魔戒.net
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - 43机场👉魔戒.net
+      - FR_油管 TG 8度科技 2
+      - 78机场👉魔戒.net
+      - GB_油管 TG 8度科技
+      - _GB_英国 2
+      - 美国(绿头外网集团)(Public) 7
+      - _CA_加拿大 3
+      - RU_油管 TG 8度科技 2
       - 美國(绿头外网集团)(Public)
-      - 美國(绿头外网集团)(Public) 5
-      - CN | 125
-      - 美國(绿头外网集团)(Public) 2
-      - "| 28"
-      - US | 296
-      - "| 15"
-      - 新加坡(绿头外网集团)(Public) 3
-      - 韓國(绿头外网集团)(Public) 2
-      - CN | 79
-      - EG | 105
-      - DE | 100
-      - ZZ | 354
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 5
-      - FR | 113
-      - ZZ | 355
-      - ZZ | 388
-      - "| 36"
-      - US | 219
-      - FR | 119
-      - 香港(绿头外网集团)(Public) 3
-      - 美國(绿头外网集团)(Public) 11
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 12
-      - ZZ | 376
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 7
-      - 美國(绿头外网集团)(Public) 12
-      - ZZ | 348
-      - FR | 128
-      - ZZ | 345
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 11
-      - FR | 129
-      - ZZ | 347
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 6
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 15
-      - FR | 110
-      - ZZ | 379
-      - ZZ | 382
-      - US | 206
-      - ZZ | 338
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 8
-      - US | 207
-      - ZZ | 340
-      - ZZ | 357
-      - ZZ | 344
-      - ZZ | 366
-      - US | 217
-      - "| 22"
-      - FR | 121
-      - ZZ | 350
-      - DE | 99
-      - FR | 126
-      - FR | 130
-      - AU | 35
-      - ZZ | 339
-      - US | 256
-      - ZZ | 377
-      - FR | 107
-      - ZZ | 372
-      - ZZ | 384
-      - ZZ | 374
-      - DE | 101
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 14
-      - DE | 98
-      - FR | 125
-      - ZZ | 352
-      - US | 211
-      - US | 238
-      - 印度(绿头外网集团)(Public)
-      - FR | 127
-      - US | 253
-      - ZZ | 359
-      - US | 210
-      - ZZ | 349
-      - ZZ | 381
-      - CN | 74
-      - FR | 111
-      - US | 227
-      - ZZ | 378
-      - 香港(绿头外网集团)(Public) 4
-      - CN | 116
-      - ZZ | 342
-      - ZZ | 373
-      - CN | 80
-      - US | 189
-      - ZZ | 333
-      - ZZ | 332
-      - FR | 122
-      - FR | 133
-      - US | 225
-      - ZZ | 335
-      - FR | 108
-      - FR | 116
-      - FR | 124
-      - ZZ | 321
-      - ZZ | 305
-      - ZZ | 361
-      - US | 233
-      - ZZ | 314
-      - ZZ | 363
-      - FR | 120
-      - US | 248
-      - "| 03"
-      - ZZ | 360
-      - "| 19"
-      - US | 204
-      - ZZ | 375
-      - ZZ | 306
-      - "| 54"
-      - ZZ | 323
+      - _CA_加拿大 7
+      - CA_油管 TG 8度科技 3
+      - 英国(绿头外网集团)(Public) 5
+      - 俄罗斯千兆-02号
+      - _CA_加拿大 2
+      - _CA_加拿大 11
+      - CN | 10
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -564,555 +228,215 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台灣(绿头外网集团)(Public)
-      - CN | 95
-      - CN | 68
-      - "| 42"
-      - CN | 84
-      - EG | 106
-      - 香港(绿头外网集团)(Public) 2
-      - "| 53"
-      - US | 301
-      - EE | 104
-      - 美國(绿头外网集团)(Public) 4
-      - "| 30"
-      - EE | 140
-      - 美國(绿头外网集团)(Public) 3
-      - "| 59"
-      - 日本(绿头外网集团)(Public) 4
-      - US | 297
-      - "| 43"
-      - CA | 46
-      - "| 60"
-      - US | 293
-      - CA | 47
+      - 77机场👉魔戒.net
+      - 76机场👉魔戒.net
+      - 58机场👉魔戒.net
+      - 56机场👉魔戒.net
+      - 52机场👉魔戒.net
+      - 49机场👉魔戒.net
+      - 55机场👉魔戒.net
+      - 53机场👉魔戒.net
+      - 59机场👉魔戒.net
+      - 45机场👉魔戒.net
+      - 50机场👉魔戒.net
+      - 51机场👉魔戒.net
+      - 23机场👉魔戒.net 2
+      - 29机场👉魔戒.net 2
+      - CN | 05
+      - 26机场👉魔戒.net 2
+      - 54机场👉魔戒.net
+      - CN | 07
+      - 32机场👉魔戒.net 2
+      - CN | 06
+      - 19机场👉魔戒.net
+      - 24机场👉魔戒.net 2
+      - 27机场👉魔戒.net 2
+      - 57机场👉魔戒.net
+      - 82机场👉魔戒.net
+      - US | 18
+      - 28机场👉魔戒.net 2
+      - 30机场👉魔戒.net 2
+      - 60机场👉魔戒.net
+      - 47机场👉魔戒.net
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - 43机场👉魔戒.net
+      - FR_油管 TG 8度科技 2
+      - 78机场👉魔戒.net
+      - GB_油管 TG 8度科技
+      - _GB_英国 2
+      - 美国(绿头外网集团)(Public) 7
+      - _CA_加拿大 3
+      - RU_油管 TG 8度科技 2
       - 美國(绿头外网集团)(Public)
-      - 美國(绿头外网集团)(Public) 5
-      - CN | 125
-      - 美國(绿头外网集团)(Public) 2
-      - "| 28"
-      - US | 296
-      - "| 15"
-      - 新加坡(绿头外网集团)(Public) 3
-      - 韓國(绿头外网集团)(Public) 2
-      - CN | 79
-      - EG | 105
-      - DE | 100
-      - ZZ | 354
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 5
-      - FR | 113
-      - ZZ | 355
-      - ZZ | 388
-      - "| 36"
-      - US | 219
-      - FR | 119
-      - 香港(绿头外网集团)(Public) 3
-      - 美國(绿头外网集团)(Public) 11
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 12
-      - ZZ | 376
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 7
-      - 美國(绿头外网集团)(Public) 12
-      - ZZ | 348
-      - FR | 128
-      - ZZ | 345
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 11
-      - FR | 129
-      - ZZ | 347
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 6
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 15
-      - FR | 110
-      - ZZ | 379
-      - ZZ | 382
-      - US | 206
-      - ZZ | 338
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 8
-      - US | 207
-      - ZZ | 340
-      - ZZ | 357
-      - ZZ | 344
-      - ZZ | 366
-      - US | 217
-      - "| 22"
-      - FR | 121
-      - ZZ | 350
-      - DE | 99
-      - FR | 126
-      - FR | 130
-      - AU | 35
-      - ZZ | 339
-      - US | 256
-      - ZZ | 377
-      - FR | 107
-      - ZZ | 372
-      - ZZ | 384
-      - ZZ | 374
-      - DE | 101
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 14
-      - DE | 98
-      - FR | 125
-      - ZZ | 352
-      - US | 211
-      - US | 238
-      - 印度(绿头外网集团)(Public)
-      - FR | 127
-      - US | 253
-      - ZZ | 359
-      - US | 210
-      - ZZ | 349
-      - ZZ | 381
-      - CN | 74
-      - FR | 111
-      - US | 227
-      - ZZ | 378
-      - 香港(绿头外网集团)(Public) 4
-      - CN | 116
-      - ZZ | 342
-      - ZZ | 373
-      - CN | 80
-      - US | 189
-      - ZZ | 333
-      - ZZ | 332
-      - FR | 122
-      - FR | 133
-      - US | 225
-      - ZZ | 335
-      - FR | 108
-      - FR | 116
-      - FR | 124
-      - ZZ | 321
-      - ZZ | 305
-      - ZZ | 361
-      - US | 233
-      - ZZ | 314
-      - ZZ | 363
-      - FR | 120
-      - US | 248
-      - "| 03"
-      - ZZ | 360
-      - "| 19"
-      - US | 204
-      - ZZ | 375
-      - ZZ | 306
-      - "| 54"
-      - ZZ | 323
+      - _CA_加拿大 7
+      - CA_油管 TG 8度科技 3
+      - 英国(绿头外网集团)(Public) 5
+      - 俄罗斯千兆-02号
+      - _CA_加拿大 2
+      - _CA_加拿大 11
+      - CN | 10
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 台灣(绿头外网集团)(Public)
-      - 香港(绿头外网集团)(Public) 2
-      - 香港(绿头外网集团)(Public) 3
-      - 香港(绿头外网集团)(Public) 4
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 台灣(绿头外网集团)(Public)
-      - CN | 95
-      - CN | 68
-      - "| 42"
-      - CN | 84
-      - EG | 106
-      - 香港(绿头外网集团)(Public) 2
-      - "| 53"
-      - US | 301
-      - EE | 104
-      - 美國(绿头外网集团)(Public) 4
-      - "| 30"
-      - EE | 140
-      - 美國(绿头外网集团)(Public) 3
-      - "| 59"
-      - 日本(绿头外网集团)(Public) 4
-      - US | 297
-      - "| 43"
-      - CA | 46
-      - "| 60"
-      - US | 293
-      - CA | 47
+      - 77机场👉魔戒.net
+      - 76机场👉魔戒.net
+      - 58机场👉魔戒.net
+      - 56机场👉魔戒.net
+      - 52机场👉魔戒.net
+      - 49机场👉魔戒.net
+      - 55机场👉魔戒.net
+      - 53机场👉魔戒.net
+      - 59机场👉魔戒.net
+      - 45机场👉魔戒.net
+      - 50机场👉魔戒.net
+      - 51机场👉魔戒.net
+      - 23机场👉魔戒.net 2
+      - 29机场👉魔戒.net 2
+      - CN | 05
+      - 26机场👉魔戒.net 2
+      - 54机场👉魔戒.net
+      - CN | 07
+      - 32机场👉魔戒.net 2
+      - CN | 06
+      - 19机场👉魔戒.net
+      - 24机场👉魔戒.net 2
+      - 27机场👉魔戒.net 2
+      - 57机场👉魔戒.net
+      - 82机场👉魔戒.net
+      - US | 18
+      - 28机场👉魔戒.net 2
+      - 30机场👉魔戒.net 2
+      - 60机场👉魔戒.net
+      - 47机场👉魔戒.net
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - 43机场👉魔戒.net
+      - FR_油管 TG 8度科技 2
+      - 78机场👉魔戒.net
+      - GB_油管 TG 8度科技
+      - _GB_英国 2
+      - 美国(绿头外网集团)(Public) 7
+      - _CA_加拿大 3
+      - RU_油管 TG 8度科技 2
       - 美國(绿头外网集团)(Public)
-      - 美國(绿头外网集团)(Public) 5
-      - CN | 125
-      - 美國(绿头外网集团)(Public) 2
-      - "| 28"
-      - US | 296
-      - "| 15"
-      - 新加坡(绿头外网集团)(Public) 3
-      - 韓國(绿头外网集团)(Public) 2
-      - CN | 79
-      - EG | 105
-      - DE | 100
-      - ZZ | 354
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 5
-      - FR | 113
-      - ZZ | 355
-      - ZZ | 388
-      - "| 36"
-      - US | 219
-      - FR | 119
-      - 香港(绿头外网集团)(Public) 3
-      - 美國(绿头外网集团)(Public) 11
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 12
-      - ZZ | 376
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 7
-      - 美國(绿头外网集团)(Public) 12
-      - ZZ | 348
-      - FR | 128
-      - ZZ | 345
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 11
-      - FR | 129
-      - ZZ | 347
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 6
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 15
-      - FR | 110
-      - ZZ | 379
-      - ZZ | 382
-      - US | 206
-      - ZZ | 338
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 8
-      - US | 207
-      - ZZ | 340
-      - ZZ | 357
-      - ZZ | 344
-      - ZZ | 366
-      - US | 217
-      - "| 22"
-      - FR | 121
-      - ZZ | 350
-      - DE | 99
-      - FR | 126
-      - FR | 130
-      - AU | 35
-      - ZZ | 339
-      - US | 256
-      - ZZ | 377
-      - FR | 107
-      - ZZ | 372
-      - ZZ | 384
-      - ZZ | 374
-      - DE | 101
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 14
-      - DE | 98
-      - FR | 125
-      - ZZ | 352
-      - US | 211
-      - US | 238
-      - 印度(绿头外网集团)(Public)
-      - FR | 127
-      - US | 253
-      - ZZ | 359
-      - US | 210
-      - ZZ | 349
-      - ZZ | 381
-      - CN | 74
-      - FR | 111
-      - US | 227
-      - ZZ | 378
-      - 香港(绿头外网集团)(Public) 4
-      - CN | 116
-      - ZZ | 342
-      - ZZ | 373
-      - CN | 80
-      - US | 189
-      - ZZ | 333
-      - ZZ | 332
-      - FR | 122
-      - FR | 133
-      - US | 225
-      - ZZ | 335
-      - FR | 108
-      - FR | 116
-      - FR | 124
-      - ZZ | 321
-      - ZZ | 305
-      - ZZ | 361
-      - US | 233
-      - ZZ | 314
-      - ZZ | 363
-      - FR | 120
-      - US | 248
-      - "| 03"
-      - ZZ | 360
-      - "| 19"
-      - US | 204
-      - ZZ | 375
-      - ZZ | 306
-      - "| 54"
-      - ZZ | 323
+      - _CA_加拿大 7
+      - CA_油管 TG 8度科技 3
+      - 英国(绿头外网集团)(Public) 5
+      - 俄罗斯千兆-02号
+      - _CA_加拿大 2
+      - _CA_加拿大 11
+      - CN | 10
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 台灣(绿头外网集团)(Public)
-      - CN | 95
-      - CN | 68
-      - "| 42"
-      - CN | 84
-      - EG | 106
-      - 香港(绿头外网集团)(Public) 2
-      - "| 53"
-      - US | 301
-      - EE | 104
-      - 美國(绿头外网集团)(Public) 4
-      - "| 30"
-      - EE | 140
-      - 美國(绿头外网集团)(Public) 3
-      - "| 59"
-      - 日本(绿头外网集团)(Public) 4
-      - US | 297
-      - "| 43"
-      - CA | 46
-      - "| 60"
-      - US | 293
-      - CA | 47
+      - 77机场👉魔戒.net
+      - 76机场👉魔戒.net
+      - 58机场👉魔戒.net
+      - 56机场👉魔戒.net
+      - 52机场👉魔戒.net
+      - 49机场👉魔戒.net
+      - 55机场👉魔戒.net
+      - 53机场👉魔戒.net
+      - 59机场👉魔戒.net
+      - 45机场👉魔戒.net
+      - 50机场👉魔戒.net
+      - 51机场👉魔戒.net
+      - 23机场👉魔戒.net 2
+      - 29机场👉魔戒.net 2
+      - CN | 05
+      - 26机场👉魔戒.net 2
+      - 54机场👉魔戒.net
+      - CN | 07
+      - 32机场👉魔戒.net 2
+      - CN | 06
+      - 19机场👉魔戒.net
+      - 24机场👉魔戒.net 2
+      - 27机场👉魔戒.net 2
+      - 57机场👉魔戒.net
+      - 82机场👉魔戒.net
+      - US | 18
+      - 28机场👉魔戒.net 2
+      - 30机场👉魔戒.net 2
+      - 60机场👉魔戒.net
+      - 47机场👉魔戒.net
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - 43机场👉魔戒.net
+      - FR_油管 TG 8度科技 2
+      - 78机场👉魔戒.net
+      - GB_油管 TG 8度科技
+      - _GB_英国 2
+      - 美国(绿头外网集团)(Public) 7
+      - _CA_加拿大 3
+      - RU_油管 TG 8度科技 2
       - 美國(绿头外网集团)(Public)
-      - 美國(绿头外网集团)(Public) 5
-      - CN | 125
-      - 美國(绿头外网集团)(Public) 2
-      - "| 28"
-      - US | 296
-      - "| 15"
-      - 新加坡(绿头外网集团)(Public) 3
-      - 韓國(绿头外网集团)(Public) 2
-      - CN | 79
-      - EG | 105
-      - DE | 100
-      - ZZ | 354
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 5
-      - FR | 113
-      - ZZ | 355
-      - ZZ | 388
-      - "| 36"
-      - US | 219
-      - FR | 119
-      - 香港(绿头外网集团)(Public) 3
-      - 美國(绿头外网集团)(Public) 11
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 12
-      - ZZ | 376
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 7
-      - 美國(绿头外网集团)(Public) 12
-      - ZZ | 348
-      - FR | 128
-      - ZZ | 345
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 11
-      - FR | 129
-      - ZZ | 347
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 6
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 15
-      - FR | 110
-      - ZZ | 379
-      - ZZ | 382
-      - US | 206
-      - ZZ | 338
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 8
-      - US | 207
-      - ZZ | 340
-      - ZZ | 357
-      - ZZ | 344
-      - ZZ | 366
-      - US | 217
-      - "| 22"
-      - FR | 121
-      - ZZ | 350
-      - DE | 99
-      - FR | 126
-      - FR | 130
-      - AU | 35
-      - ZZ | 339
-      - US | 256
-      - ZZ | 377
-      - FR | 107
-      - ZZ | 372
-      - ZZ | 384
-      - ZZ | 374
-      - DE | 101
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 14
-      - DE | 98
-      - FR | 125
-      - ZZ | 352
-      - US | 211
-      - US | 238
-      - 印度(绿头外网集团)(Public)
-      - FR | 127
-      - US | 253
-      - ZZ | 359
-      - US | 210
-      - ZZ | 349
-      - ZZ | 381
-      - CN | 74
-      - FR | 111
-      - US | 227
-      - ZZ | 378
-      - 香港(绿头外网集团)(Public) 4
-      - CN | 116
-      - ZZ | 342
-      - ZZ | 373
-      - CN | 80
-      - US | 189
-      - ZZ | 333
-      - ZZ | 332
-      - FR | 122
-      - FR | 133
-      - US | 225
-      - ZZ | 335
-      - FR | 108
-      - FR | 116
-      - FR | 124
-      - ZZ | 321
-      - ZZ | 305
-      - ZZ | 361
-      - US | 233
-      - ZZ | 314
-      - ZZ | 363
-      - FR | 120
-      - US | 248
-      - "| 03"
-      - ZZ | 360
-      - "| 19"
-      - US | 204
-      - ZZ | 375
-      - ZZ | 306
-      - "| 54"
-      - ZZ | 323
+      - _CA_加拿大 7
+      - CA_油管 TG 8度科技 3
+      - 英国(绿头外网集团)(Public) 5
+      - 俄罗斯千兆-02号
+      - _CA_加拿大 2
+      - _CA_加拿大 11
+      - CN | 10
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台灣(绿头外网集团)(Public)
-      - CN | 95
-      - CN | 68
-      - "| 42"
-      - CN | 84
-      - EG | 106
-      - 香港(绿头外网集团)(Public) 2
-      - "| 53"
-      - US | 301
-      - EE | 104
-      - 美國(绿头外网集团)(Public) 4
-      - "| 30"
-      - EE | 140
-      - 美國(绿头外网集团)(Public) 3
-      - "| 59"
-      - 日本(绿头外网集团)(Public) 4
-      - US | 297
-      - "| 43"
-      - CA | 46
-      - "| 60"
-      - US | 293
-      - CA | 47
+      - 77机场👉魔戒.net
+      - 76机场👉魔戒.net
+      - 58机场👉魔戒.net
+      - 56机场👉魔戒.net
+      - 52机场👉魔戒.net
+      - 49机场👉魔戒.net
+      - 55机场👉魔戒.net
+      - 53机场👉魔戒.net
+      - 59机场👉魔戒.net
+      - 45机场👉魔戒.net
+      - 50机场👉魔戒.net
+      - 51机场👉魔戒.net
+      - 23机场👉魔戒.net 2
+      - 29机场👉魔戒.net 2
+      - CN | 05
+      - 26机场👉魔戒.net 2
+      - 54机场👉魔戒.net
+      - CN | 07
+      - 32机场👉魔戒.net 2
+      - CN | 06
+      - 19机场👉魔戒.net
+      - 24机场👉魔戒.net 2
+      - 27机场👉魔戒.net 2
+      - 57机场👉魔戒.net
+      - 82机场👉魔戒.net
+      - US | 18
+      - 28机场👉魔戒.net 2
+      - 30机场👉魔戒.net 2
+      - 60机场👉魔戒.net
+      - 47机场👉魔戒.net
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - 43机场👉魔戒.net
+      - FR_油管 TG 8度科技 2
+      - 78机场👉魔戒.net
+      - GB_油管 TG 8度科技
+      - _GB_英国 2
+      - 美国(绿头外网集团)(Public) 7
+      - _CA_加拿大 3
+      - RU_油管 TG 8度科技 2
       - 美國(绿头外网集团)(Public)
-      - 美國(绿头外网集团)(Public) 5
-      - CN | 125
-      - 美國(绿头外网集团)(Public) 2
-      - "| 28"
-      - US | 296
-      - "| 15"
-      - 新加坡(绿头外网集团)(Public) 3
-      - 韓國(绿头外网集团)(Public) 2
-      - CN | 79
-      - EG | 105
-      - DE | 100
-      - ZZ | 354
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 5
-      - FR | 113
-      - ZZ | 355
-      - ZZ | 388
-      - "| 36"
-      - US | 219
-      - FR | 119
-      - 香港(绿头外网集团)(Public) 3
-      - 美國(绿头外网集团)(Public) 11
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 12
-      - ZZ | 376
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 7
-      - 美國(绿头外网集团)(Public) 12
-      - ZZ | 348
-      - FR | 128
-      - ZZ | 345
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 11
-      - FR | 129
-      - ZZ | 347
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 6
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 15
-      - FR | 110
-      - ZZ | 379
-      - ZZ | 382
-      - US | 206
-      - ZZ | 338
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 8
-      - US | 207
-      - ZZ | 340
-      - ZZ | 357
-      - ZZ | 344
-      - ZZ | 366
-      - US | 217
-      - "| 22"
-      - FR | 121
-      - ZZ | 350
-      - DE | 99
-      - FR | 126
-      - FR | 130
-      - AU | 35
-      - ZZ | 339
-      - US | 256
-      - ZZ | 377
-      - FR | 107
-      - ZZ | 372
-      - ZZ | 384
-      - ZZ | 374
-      - DE | 101
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 14
-      - DE | 98
-      - FR | 125
-      - ZZ | 352
-      - US | 211
-      - US | 238
-      - 印度(绿头外网集团)(Public)
-      - FR | 127
-      - US | 253
-      - ZZ | 359
-      - US | 210
-      - ZZ | 349
-      - ZZ | 381
-      - CN | 74
-      - FR | 111
-      - US | 227
-      - ZZ | 378
-      - 香港(绿头外网集团)(Public) 4
-      - CN | 116
-      - ZZ | 342
-      - ZZ | 373
-      - CN | 80
-      - US | 189
-      - ZZ | 333
-      - ZZ | 332
-      - FR | 122
-      - FR | 133
-      - US | 225
-      - ZZ | 335
-      - FR | 108
-      - FR | 116
-      - FR | 124
-      - ZZ | 321
-      - ZZ | 305
-      - ZZ | 361
-      - US | 233
-      - ZZ | 314
-      - ZZ | 363
-      - FR | 120
-      - US | 248
-      - "| 03"
-      - ZZ | 360
-      - "| 19"
-      - US | 204
-      - ZZ | 375
-      - ZZ | 306
-      - "| 54"
-      - ZZ | 323
+      - _CA_加拿大 7
+      - CA_油管 TG 8度科技 3
+      - 英国(绿头外网集团)(Public) 5
+      - 俄罗斯千兆-02号
+      - _CA_加拿大 2
+      - _CA_加拿大 11
+      - CN | 10
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1128,137 +452,53 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台灣(绿头外网集团)(Public)
-      - CN | 95
-      - CN | 68
-      - "| 42"
-      - CN | 84
-      - EG | 106
-      - 香港(绿头外网集团)(Public) 2
-      - "| 53"
-      - US | 301
-      - EE | 104
-      - 美國(绿头外网集团)(Public) 4
-      - "| 30"
-      - EE | 140
-      - 美國(绿头外网集团)(Public) 3
-      - "| 59"
-      - 日本(绿头外网集团)(Public) 4
-      - US | 297
-      - "| 43"
-      - CA | 46
-      - "| 60"
-      - US | 293
-      - CA | 47
+      - 77机场👉魔戒.net
+      - 76机场👉魔戒.net
+      - 58机场👉魔戒.net
+      - 56机场👉魔戒.net
+      - 52机场👉魔戒.net
+      - 49机场👉魔戒.net
+      - 55机场👉魔戒.net
+      - 53机场👉魔戒.net
+      - 59机场👉魔戒.net
+      - 45机场👉魔戒.net
+      - 50机场👉魔戒.net
+      - 51机场👉魔戒.net
+      - 23机场👉魔戒.net 2
+      - 29机场👉魔戒.net 2
+      - CN | 05
+      - 26机场👉魔戒.net 2
+      - 54机场👉魔戒.net
+      - CN | 07
+      - 32机场👉魔戒.net 2
+      - CN | 06
+      - 19机场👉魔戒.net
+      - 24机场👉魔戒.net 2
+      - 27机场👉魔戒.net 2
+      - 57机场👉魔戒.net
+      - 82机场👉魔戒.net
+      - US | 18
+      - 28机场👉魔戒.net 2
+      - 30机场👉魔戒.net 2
+      - 60机场👉魔戒.net
+      - 47机场👉魔戒.net
+      - 愛沙尼亞(绿头外网集团)(Public)
+      - 43机场👉魔戒.net
+      - FR_油管 TG 8度科技 2
+      - 78机场👉魔戒.net
+      - GB_油管 TG 8度科技
+      - _GB_英国 2
+      - 美国(绿头外网集团)(Public) 7
+      - _CA_加拿大 3
+      - RU_油管 TG 8度科技 2
       - 美國(绿头外网集团)(Public)
-      - 美國(绿头外网集团)(Public) 5
-      - CN | 125
-      - 美國(绿头外网集团)(Public) 2
-      - "| 28"
-      - US | 296
-      - "| 15"
-      - 新加坡(绿头外网集团)(Public) 3
-      - 韓國(绿头外网集团)(Public) 2
-      - CN | 79
-      - EG | 105
-      - DE | 100
-      - ZZ | 354
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 5
-      - FR | 113
-      - ZZ | 355
-      - ZZ | 388
-      - "| 36"
-      - US | 219
-      - FR | 119
-      - 香港(绿头外网集团)(Public) 3
-      - 美國(绿头外网集团)(Public) 11
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 12
-      - ZZ | 376
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 7
-      - 美國(绿头外网集团)(Public) 12
-      - ZZ | 348
-      - FR | 128
-      - ZZ | 345
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 11
-      - FR | 129
-      - ZZ | 347
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 6
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 15
-      - FR | 110
-      - ZZ | 379
-      - ZZ | 382
-      - US | 206
-      - ZZ | 338
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 8
-      - US | 207
-      - ZZ | 340
-      - ZZ | 357
-      - ZZ | 344
-      - ZZ | 366
-      - US | 217
-      - "| 22"
-      - FR | 121
-      - ZZ | 350
-      - DE | 99
-      - FR | 126
-      - FR | 130
-      - AU | 35
-      - ZZ | 339
-      - US | 256
-      - ZZ | 377
-      - FR | 107
-      - ZZ | 372
-      - ZZ | 384
-      - ZZ | 374
-      - DE | 101
-      - ‌‌🇨🇦加拿大(绿头外网集团)(Public) 14
-      - DE | 98
-      - FR | 125
-      - ZZ | 352
-      - US | 211
-      - US | 238
-      - 印度(绿头外网集团)(Public)
-      - FR | 127
-      - US | 253
-      - ZZ | 359
-      - US | 210
-      - ZZ | 349
-      - ZZ | 381
-      - CN | 74
-      - FR | 111
-      - US | 227
-      - ZZ | 378
-      - 香港(绿头外网集团)(Public) 4
-      - CN | 116
-      - ZZ | 342
-      - ZZ | 373
-      - CN | 80
-      - US | 189
-      - ZZ | 333
-      - ZZ | 332
-      - FR | 122
-      - FR | 133
-      - US | 225
-      - ZZ | 335
-      - FR | 108
-      - FR | 116
-      - FR | 124
-      - ZZ | 321
-      - ZZ | 305
-      - ZZ | 361
-      - US | 233
-      - ZZ | 314
-      - ZZ | 363
-      - FR | 120
-      - US | 248
-      - "| 03"
-      - ZZ | 360
-      - "| 19"
-      - US | 204
-      - ZZ | 375
-      - ZZ | 306
-      - "| 54"
-      - ZZ | 323
+      - _CA_加拿大 7
+      - CA_油管 TG 8度科技 3
+      - 英国(绿头外网集团)(Public) 5
+      - 俄罗斯千兆-02号
+      - _CA_加拿大 2
+      - _CA_加拿大 11
+      - CN | 10
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
