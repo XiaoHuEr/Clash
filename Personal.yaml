@@ -5,31 +5,31 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "1", server: solitary-wildflower-9af5.xiaohuer.workers.dev, port: 443, type: vmess, uuid: e5218be7-2589-4fcf-8709-b717ca1ed236, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: solitary-wildflower-9af5.xiaohuer.workers.dev}, udp: true}
-  - {name: "2", server: 162.159.160.107, port: 443, type: vmess, uuid: e5218be7-2589-4fcf-8709-b717ca1ed236, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: solitary-wildflower-9af5.xiaohuer.workers.dev}, udp: true}
+  - {name: "xiaohuercloudus", server: xiaohuercloudus.herokuapp.com, port: 443, type: vmess, uuid: e5218be7-2589-4fcf-8709-b717ca1ed236, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: xiaohuercloudus.herokuapp.com}, udp: true}
+  - {name: "xiaohuercloudvless", server: xiaohuercloudvless.herokuapp.com, port: 443, type: vmess, uuid: e5218be7-2589-4fcf-8709-b717ca1ed236, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: xiaohuercloudvless.herokuapp.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "1"
-      - "2"
+      - "xiaohuercloudus"
+      - "xiaohuercloudvless"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - "1"
-      - "2"
+      - "xiaohuercloudus"
+      - "xiaohuercloudvless"
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "1"
-      - "2"
+      - "xiaohuercloudus"
+      - "xiaohuercloudvless"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -48,8 +48,8 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - "1"
-      - "2"
+      - "xiaohuercloudus"
+      - "xiaohuercloudvless"
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -60,23 +60,23 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - "1"
-      - "2"
+      - "xiaohuercloudus"
+      - "xiaohuercloudvless"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - "1"
-      - "2"
+      - "xiaohuercloudus"
+      - "xiaohuercloudvless"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "1"
-      - "2"
+      - "xiaohuercloudus"
+      - "xiaohuercloudvless"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -92,8 +92,8 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - "1"
-      - "2"
+      - "xiaohuercloudus"
+      - "xiaohuercloudvless"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
