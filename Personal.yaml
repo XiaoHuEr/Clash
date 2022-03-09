@@ -5,7 +5,7 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "", server: 172.64.95.82, port: 443, type: vmess, uuid: e5218be7-2589-4fcf-8709-b717ca1ed236, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: solitary-wildflower-9af5.xiaohuer.workers.dev}, udp: true}
+  - {name: "", server: solitary-wildflower-9af5.xiaohuer.workers.dev, port: 443, type: vmess, uuid: e5218be7-2589-4fcf-8709-b717ca1ed236, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: solitary-wildflower-9af5.xiaohuer.workers.dev}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
